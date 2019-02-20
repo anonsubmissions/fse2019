@@ -1,0 +1,514 @@
+uid,api,postId,is_relevant,sentiment_label,sentence,association,resolutions,lexicons
+8817391=>9188731=>a=>JAVA3,xstream,comment_1_25132841,1,n,"FYI, I had the exact same problem and this solution worked for me.",,,
+8817391=>9188731=>a=>JAVA3,xstream,comment_2_25133027,1,o,"edit: One more update, for Xstream 1.2.2 I had to do this: xstream.addImplicitCollection(SimplePerson.class, ""cars"", String.class);.",,xstream=>xstream,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_1_22661956,0,o,OK.,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_1_22661956,0,o,Here is what I want to do.,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_1_22661956,0,o,I need to send the following as http request.,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_1_22661956,1,p,"""address"": { ""address1"": ""9100 hopkins bulvard hopkins bulvard bulvard"", ""address2"": ""6700 hopkins bulvard hopkins bulvard bulvard"", ""city"": ""HOPKINS"", ""county"": ""Scott"", ""postalCode"": ""55379"", ""state"": ""VA"" } How do I accomplish this using JSONArray and JSONObject?",,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_2_22661982,0,o,Have you read anything about these technologies or checked the documentation?,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_3_22662148,0,o,Are you referring to a post or a put ?,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_3_22662148,0,o,Http request is quite broad.,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_4_22662169,0,o,Is it just me or you're never adding anything to your jsonAddressArray ?,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_5_22662206,1,p,I do not want to send harcoded values to any of the fields.,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_5_22662206,0,o,I want the address to be fetched from the EditText.,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_5_22662206,0,o,That is the reason i used txtAddress1.getText().toString().,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_6_22662220,0,o,it is a put method.,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_7_22662231,0,o,Yeh your right...it's from the original code.,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_8_22663796,0,o,"You should point that you have moved the JSONObject jsonAddressObj 
+new JSONObject(); in the loop to create a new adress each time, because I don't think he will notice that.",,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_8_22663796,0,o,"And mention that you're usign a different library, because he will ask why he can't have access to jsonAddressArray.add(jsonAddressObj);.",,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_8_22663796,1,p,But +1 for everything else!.,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_9_22663975,0,o,"Yeh, I got the feeling we're not using the same library.",,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_9_22663975,1,p,"Thanks, and it's good your pointing that out.",,,good
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_9_22663975,0,o,I've uploaded the eclipse project to URL_https://dl.dropbox.com/u/6465647/InsertJsonExample.zip as I decided I'll make an online tutorial on my blog with this example.,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_10_22664746,0,o,I did take out the for loop.,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_10_22664746,1,o,That helped me.,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_10_22664746,0,p,I just put the values to my jsonAddressObj.,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_10_22664746,0,o,Passed the jsonAddressObj to jsonObjSend.,,,
+15911250=>15911410=>a=>JAVA3,net.sf.json,comment_10_22664746,1,o,That did that work for me.,,,
+12727742=>12727951=>a=>JAVA5,net.sf.json,comment_1_17192096,1,o,-1: net.sf.json.JSONObject doesn't have a String constructor.,,,
+12727742=>12727951=>a=>JAVA5,net.sf.json,comment_1_17192096,1,n,URL_http://json-lib.sourceforge.net/apidocs/jdk15/net/sf/json/JSONObject.html .,url_http://json-lib.sourceforge.net/apidocs/jdk15/net/sf/json=>json-lib,url_http://json-lib.sourceforge.net/apidocs/jdk15/net/sf/json=>json-lib,
+12727742=>12727951=>a=>JAVA5,net.sf.json,comment_2_17208191,1,n,I'm realllly sorry!,url_http://json-lib.sourceforge.net/apidocs/jdk15/net/sf/json=>json-lib,,sorry
+12727742=>12727951=>a=>JAVA5,net.sf.json,comment_2_17208191,0,o,I take it back.,,,
+12727742=>12727951=>a=>JAVA5,net.sf.json,comment_2_17208191,0,n,Oh my bad!,,,bad
+12727742=>12727951=>a=>JAVA5,net.sf.json,comment_2_17208191,0,n,I just confused org.codehaus.jettison.json.JSONObject with net.sf.json.JSONObject .,,,confused
+12727742=>12727951=>a=>JAVA5,net.sf.json,comment_2_17208191,1,p,Thanks anyway for pointing that out.,,,
+12727742=>12727951=>a=>JAVA5,net.sf.json,comment_2_17208191,1,n,@David Grant is correct and I'm wrong.,,,"wrong,correct"
+12727742=>12727951=>a=>JAVA5,net.sf.json,comment_2_17208191,1,n,Guys sorry for the wrong information.,,,"sorry,wrong"
+12727742=>12727951=>a=>JAVA5,net.sf.json,comment_3_17208277,1,p,I just corrected it.,,,correct
+12727742=>12727951=>a=>JAVA5,net.sf.json,comment_3_17208277,1,p,I hope this helps.,,,
+12727742=>12727951=>a=>JAVA8,net.sf.json,comment_1_17192096,1,o,-1: net.sf.json.JSONObject doesn't have a String constructor.,,,
+12727742=>12727951=>a=>JAVA8,net.sf.json,comment_1_17192096,1,n,URL_http://json-lib.sourceforge.net/apidocs/jdk15/net/sf/json/JSONObject.html .,url_http://json-lib.sourceforge.net/apidocs/jdk15/net/sf/json=>json-lib,url_http://json-lib.sourceforge.net/apidocs/jdk15/net/sf/json=>json-lib,
+12727742=>12727951=>a=>JAVA8,net.sf.json,comment_2_17208191,1,n,I'm realllly sorry!,url_http://json-lib.sourceforge.net/apidocs/jdk15/net/sf/json=>json-lib,,sorry
+12727742=>12727951=>a=>JAVA8,net.sf.json,comment_2_17208191,0,o,I take it back.,,,
+12727742=>12727951=>a=>JAVA8,net.sf.json,comment_2_17208191,0,n,Oh my bad!,,,bad
+12727742=>12727951=>a=>JAVA8,net.sf.json,comment_2_17208191,1,n,I just confused org.codehaus.jettison.json.JSONObject with net.sf.json.JSONObject .,,,confused
+12727742=>12727951=>a=>JAVA8,net.sf.json,comment_2_17208191,1,p,Thanks anyway for pointing that out.,,,
+12727742=>12727951=>a=>JAVA8,net.sf.json,comment_2_17208191,1,n,@David Grant is correct and I'm wrong.,,,"wrong,correct"
+12727742=>12727951=>a=>JAVA8,net.sf.json,comment_2_17208191,1,n,Guys sorry for the wrong information.,,,"sorry,wrong"
+12727742=>12727951=>a=>JAVA8,net.sf.json,comment_3_17208277,1,p,I just corrected it.,,,correct
+12727742=>12727951=>a=>JAVA8,net.sf.json,comment_3_17208277,1,p,I hope this helps.,,,
+12727742=>12727951=>a=>JAVA9,net.sf.json,comment_1_17192096,1,o,-1: net.sf.json.JSONObject doesn't have a String constructor.,,,
+12727742=>12727951=>a=>JAVA9,net.sf.json,comment_1_17192096,1,n,URL_http://json-lib.sourceforge.net/apidocs/jdk15/net/sf/json/JSONObject.html .,url_http://json-lib.sourceforge.net/apidocs/jdk15/net/sf/json=>json-lib,url_http://json-lib.sourceforge.net/apidocs/jdk15/net/sf/json=>json-lib,
+12727742=>12727951=>a=>JAVA9,net.sf.json,comment_2_17208191,1,n,I'm realllly sorry!,url_http://json-lib.sourceforge.net/apidocs/jdk15/net/sf/json=>json-lib,,sorry
+12727742=>12727951=>a=>JAVA9,net.sf.json,comment_2_17208191,0,o,I take it back.,,,
+12727742=>12727951=>a=>JAVA9,net.sf.json,comment_2_17208191,0,n,Oh my bad!,,,bad
+12727742=>12727951=>a=>JAVA9,net.sf.json,comment_2_17208191,1,n,I just confused org.codehaus.jettison.json.JSONObject with net.sf.json.JSONObject .,,,confused
+12727742=>12727951=>a=>JAVA9,net.sf.json,comment_2_17208191,1,p,Thanks anyway for pointing that out.,,,
+12727742=>12727951=>a=>JAVA9,net.sf.json,comment_2_17208191,1,n,@David Grant is correct and I'm wrong.,,,"wrong,correct"
+12727742=>12727951=>a=>JAVA9,net.sf.json,comment_2_17208191,1,n,Guys sorry for the wrong information.,,,"sorry,wrong"
+12727742=>12727951=>a=>JAVA9,net.sf.json,comment_3_17208277,1,p,I just corrected it.,,,correct
+12727742=>12727951=>a=>JAVA9,net.sf.json,comment_3_17208277,1,p,I hope this helps.,,,
+6154845=>6162267=>a=>JAVA3,org.json,comment_1_7163560,1,p,Hi majestica - glad it is solved.,,,glad
+6154845=>6162267=>a=>JAVA3,org.json,comment_1_7163560,1,p,"please mark this answer or the other as ""accepted"".",,,
+20242812=>20243197=>a=>JAVA6,org.json,comment_1_30190896,0,o,It gives me 10 times the first price.,,,
+20242812=>20243197=>a=>JAVA6,org.json,comment_2_30190982,0,p,nice.,,,nice
+20242812=>20243197=>a=>JAVA6,org.json,comment_2_30190982,0,o,I changed something.,,,
+20242812=>20243197=>a=>JAVA6,org.json,comment_2_30190982,1,p,Now it's working.,,,working
+20242812=>20243197=>a=>JAVA6,org.json,comment_2_30190982,0,o,I edit your post and then I accept it.,,,
+7683258=>7683354=>a=>JAVA5,org.json,comment_1_9340088,0,o,"If you look at the docs, that JSONObject doesn't have a JSONObject(String) constructor, either.",,,
+7683258=>7683354=>a=>JAVA5,org.json,comment_2_9340102,0,o,URL_http://www.json.org/javadoc/org/json/JSONObject.htmllook at this.,,"url_http://www.json.org/javadoc/org/json/jsonobject.h=>org.json,url_http://www.json.org/javadoc/org/json/jsonobject.htmllook=>org.json",
+7683258=>7683354=>a=>JAVA5,org.json,comment_3_9340152,0,o,@RyanStewart: [Yes it does.,,,
+7683258=>7683354=>a=>JAVA5,org.json,comment_3_9340152,0,o,]( URL_http://www.json.org/javadoc/org/json/JSONObject.h tml#JSONObject(java.lang.String)).,,url_http://www.json.org/javadoc/org/json/jsonobject.h=>org.json,
+7683258=>7683354=>a=>JAVA5,org.json,comment_4_9340197,0,n,"Oops, my bad.",url_http://www.json.org/javadoc/org/json/jsonobject.h=>org.json,,bad
+7683258=>7683354=>a=>JAVA5,org.json,comment_4_9340197,0,o,I never noticed it hiding among those others.,,,
+7683258=>7683354=>a=>JAVA5,org.json,comment_5_9340789,1,p,Actually I searched the internet and found another jar that is having the number of constructors found in the documentation of JSONLink is this: URL_http://code.google.com/p/wave-robot-java - client/downloads/detail?name=json.jar&can=4&q=So in order to use JSON correctly we have to include two jars namely the one we get from JSON website and one getting from Google website(Link given) While using we have to specifically tell the compiler whose constructor we want to call.,,,correctly
+7683258=>7683354=>a=>JAVA4,org.json,comment_1_9340088,0,o,"If you look at the docs, that JSONObject doesn't have a JSONObject(String) constructor, either.",,,
+7683258=>7683354=>a=>JAVA4,org.json,comment_2_9340102,0,o,URL_http://www.json.org/javadoc/org/json/JSONObject.htmllook at this.,,"url_http://www.json.org/javadoc/org/json/jsonobject.h=>org.json,url_http://www.json.org/javadoc/org/json/jsonobject.htmllook=>org.json",
+7683258=>7683354=>a=>JAVA4,org.json,comment_3_9340152,0,o,@RyanStewart: [Yes it does.,,,
+7683258=>7683354=>a=>JAVA4,org.json,comment_3_9340152,0,o,]( URL_http://www.json.org/javadoc/org/json/JSONObject.h tml#JSONObject(java.lang.String)).,,url_http://www.json.org/javadoc/org/json/jsonobject.h=>org.json,
+7683258=>7683354=>a=>JAVA4,org.json,comment_4_9340197,1,n,"Oops, my bad.",url_http://www.json.org/javadoc/org/json/jsonobject.h=>org.json,,bad
+7683258=>7683354=>a=>JAVA4,org.json,comment_4_9340197,0,o,I never noticed it hiding among those others.,,,
+7683258=>7683354=>a=>JAVA4,org.json,comment_5_9340789,1,p,Actually I searched the internet and found another jar that is having the number of constructors found in the documentation of JSONLink is this: URL_http://code.google.com/p/wave-robot-java - client/downloads/detail?name=json.jar&can=4&q=So in order to use JSON correctly we have to include two jars namely the one we get from JSON website and one getting from Google website(Link given) While using we have to specifically tell the compiler whose constructor we want to call.,,,correctly
+12064844=>12077140=>a=>JAVA7,org.json,comment_1_16169780,1,p,thank you very much.,,,thank
+12064844=>12077140=>a=>JAVA7,org.json,comment_1_16169780,1,n,that was the problem.,,,
+7704981=>7705388=>a=>JAVA3,org.json,comment_1_9371106,1,n,"Yes, thats true, but I can't even convert the String to a JSONArray.I tested my code with a other JSON PHP File with other entrys and there was no error, only with this code and I dont know why.The program reaches only the line ""JSONArray jArray 
+new JSONArray(result);"" and then it aborts in the for and catches this error:Here is the error code from LogCat:Error parsing data org.json.JSONException: Value of type java.lang.String cannot be converted to JSONArray.I hope you understand my problem!",java.lang.string=>java.lang,java.lang.string=>java.lang,abort
+7704981=>7705388=>a=>JAVA3,org.json,comment_1_9371106,0,o,:-).,,,
+7704981=>7705388=>a=>JAVA3,org.json,comment_2_9396832,0,p,Hi!,java.lang.string=>java.lang,,
+7704981=>7705388=>a=>JAVA3,org.json,comment_2_9396832,1,p,"It's a bit strange, I got a simple JSONArray and when I set a breakpoint in the function for the JSON data, my program dont get in the for() and it goes directly in the catch() function.But the ""result"" var containts the right JSON String.",,,simple
+7704981=>7705388=>a=>JAVA3,org.json,comment_3_9397269,0,p,my best guess?,,,
+7704981=>7705388=>a=>JAVA3,org.json,comment_3_9397269,1,n,"The error is how you read the InputStream in order to ""create"" the String result you pass to the JSONArray jArray 
+new JSONArray(result);.",,,
+7704981=>7705388=>a=>JAVA3,org.json,comment_3_9397269,0,o,Just for the purpose of trying use the method copyInStringBuilder() that I ve added in the post edit and report me some feedback.,,,
+7704981=>7705388=>a=>JAVA3,org.json,comment_4_9407053,0,p,Hi!,,,
+7704981=>7705388=>a=>JAVA3,org.json,comment_4_9407053,1,p,"Thanks for reply!I check your functin ""copyInStringBuilder"", but how do you use the ""buffer"" var?",,,
+7704981=>7705388=>a=>JAVA3,org.json,comment_5_9408203,0,o,See my edit ......,,,
+7704981=>7705388=>a=>JAVA3,org.json,comment_6_20081982,0,o,Did you solve this?,,,
+7704981=>7705388=>a=>JAVA3,org.json,comment_6_20081982,0,n,I'm seeing the same weird exception on Android 2.3 (4.0 seems to work).,,,"weird,exception"
+18372405=>18372553=>a=>JAVA2,org.json,comment_1_26977818,0,n,"i wrote similar lines, but got errors childNode.put(""class"", element.className()); childNode.put(""text"", element.ownText()); group.put(i, childNode);becasue ""i"" is a integer, how to fix it?",,,
+18372405=>18372553=>a=>JAVA2,org.json,comment_2_26977888,0,o,fixed.,,,
+18372405=>18372553=>a=>JAVA2,org.json,comment_2_26977888,0,p,thanks ....,,,
+17542240=>17583175=>a=>JAVA2,com.googlecode.json-simple,comment_1_27221054,1,p,This is really useful.,,,
+17542240=>17583175=>a=>JAVA2,com.googlecode.json-simple,comment_1_27221054,1,p,"Thanks.When you use @JsonIdentityReference(alwaysAsId=true), Jackson can't Deserialize it back, right?Is it possible to achieve the same functionality by writing custom Serializer/Deserializer?",jackson=>com.fasterxml.jackson.core,jackson=>com.fasterxml.jackson.core,
+17542240=>17583175=>a=>JAVA2,com.googlecode.json-simple,comment_2_27369223,1,p,"Correct -- if there is no object id to match, Jackson can not figure it out; so typically this option makes sense for serialize-only use case (where something else can piece it back together if need be).",jackson=>com.fasterxml.jackson.core,jackson=>com.fasterxml.jackson.core,correct
+17542240=>17583175=>a=>JAVA2,com.googlecode.json-simple,comment_2_27369223,0,o,"Custom (de)serializers can do anything you want, so theoretically yes.",,,
+7161638=>7163105=>a=>JAVA10,com.googlecode.json-simple,comment_1_8609176,1,n,"I think this will impact all attempts to serialise a User, making it difficult to ever expose a User's name over JSON.",,,
+7161638=>7163105=>a=>JAVA10,com.googlecode.json-simple,comment_2_8609356,1,o,"I can't use this solution, because I also need to be able to serialize all user objects with all fields.",,,
+7161638=>7163105=>a=>JAVA10,com.googlecode.json-simple,comment_2_8609356,1,o,And this solution will break that serialization since only the id-field will be included.,,,
+7161638=>7163105=>a=>JAVA10,com.googlecode.json-simple,comment_2_8609356,0,o,Is there no way to create a custom serilizer for Jackson as it is for Gson?,,"jackson=>com.fasterxml.jackson.core,gson=>com.google.code.gson",
+7161638=>7163105=>a=>JAVA10,com.googlecode.json-simple,comment_3_8610127,0,o,Can you comment on why JSON Views (in my answer) don't match your needs?,,,
+7161638=>7163105=>a=>JAVA10,com.googlecode.json-simple,comment_4_8610944,1,p,"@user: It may be a good solution, I'm reading about it and trying.",,,good
+7161638=>7163105=>a=>JAVA10,com.googlecode.json-simple,comment_5_8648842,1,o,"Note, too, that you can use @JsonSerialize(using=MySerializer.class) to indicate specific serialization for your property (field or getter), so it is only used for member property and NOT all instances of type.",,,
+6643800=>6644147=>a=>JAVA4,com.google.code.gson,comment_1_7852222,1,p,"I was trying to do something like this, but couldn't get it to work.",gson=>com.google.code.gson,,
+6643800=>6644147=>a=>JAVA4,com.google.code.gson,comment_1_7852222,0,o,I found a work around before you posted this.,,,
+6643800=>6644147=>a=>JAVA4,com.google.code.gson,comment_1_7852222,1,p,"This is much better, but is there a way to include the currency code like USD in the object?",,,
+6643800=>6644147=>a=>JAVA4,com.google.code.gson,comment_1_7852222,0,o,How do you access the data once it's in that map?,,,
+6643800=>6644147=>a=>JAVA4,com.google.code.gson,comment_1_7852222,0,o,I've never used maps before.,,,
+6643800=>6644147=>a=>JAVA4,com.google.code.gson,comment_2_7852571,0,o,"""How do you access the data once it's in that map?",,,
+6643800=>6644147=>a=>JAVA4,com.google.code.gson,comment_2_7852571,0,o,"I've never used maps before.""",,,
+6643800=>6644147=>a=>JAVA4,com.google.code.gson,comment_2_7852571,0,o,#NAME?,,,
+6643800=>6644147=>a=>JAVA4,com.google.code.gson,comment_2_7852571,0,o,There are plenty of online resources to learn how to program in Java.,,,
+6643800=>6644147=>a=>JAVA4,com.google.code.gson,comment_3_7852648,0,p,"""is there a way to include the currency code like USD in the object?""",,,
+6643800=>6644147=>a=>JAVA4,com.google.code.gson,comment_3_7852648,1,n,"-- Yes, but it would require custom deserialization processing, which is not terribly involved, but since the JSON structure is such a poor fit for the target Java data structure, it's a little easier to just transform the Java objects into what you want ",,,"simple,little,easy"
+6643800=>6644147=>a=>JAVA4,com.google.code.gson,comment_3_7852648,0,o,"I'll post example code for doing so, which will include getting data out of the Map.",,,
+6643800=>6644147=>a=>JAVA4,com.google.code.gson,comment_4_7852787,0,o,"I've taken my school's AP Comp Sci course, but we only learned the minimum to take the AP test.",,,
+6643800=>6644147=>a=>JAVA4,com.google.code.gson,comment_4_7852787,0,p,"I know my fair share about Java, but have only used ArrayLists and the like.",,,
+6643800=>6644147=>a=>JAVA4,com.google.code.gson,comment_4_7852787,0,p,"My android app is pretty much complete, except for the part where when I try to actually download that json from the internet, I get a stub error.",,,
+6643800=>6644147=>a=>JAVA4,com.google.code.gson,comment_4_7852787,0,o,"I've been told it's because I'm using the emulator, and actually need a device, which I don't have.",,,
+18977144=>18977257=>a=>JAVA4,com.google.code.gson,comment_1_28030603,0,o,"I asume this ""input"" would be URL to that json?or is it something else?",,,
+18977144=>18977257=>a=>JAVA4,com.google.code.gson,comment_2_28030624,0,o,"@Stebra, Exactly, I included that as a comment in the code.",,,
+6636869=>6636964=>a=>JAVA3,com.google.code.gson,comment_1_7840597,0,p,Thank you for your reply!,gson=>com.google.code.gson,,thank
+6636869=>6636964=>a=>JAVA3,com.google.code.gson,comment_1_7840597,1,p,"An example of the above helped me, I'm right understand that i can get exact key: value from my class in json?",gson=>com.google.code.gson,,
+6596072=>6596435=>a=>JAVA5,com.google.code.gson,comment_1_7782816,1,p,Thanks man!,,,
+6596072=>6596435=>a=>JAVA5,com.google.code.gson,comment_1_7782816,1,p,This worked just perfect!What does the annotation '@SerializedName' do?Thanks again!.,,,
+6596072=>6596435=>a=>JAVA5,com.google.code.gson,comment_2_7782905,1,o,"It provides a mapping between the key used in the JSON string, and the attribute in your Java class that you wish to map into.",,,
+6596072=>6596435=>a=>JAVA5,com.google.code.gson,comment_3_7782951,1,p,Very nice!,,,nice
+6596072=>6596435=>a=>JAVA5,com.google.code.gson,comment_3_7782951,1,p,Thanks again.,,,
+6596072=>6596435=>a=>JAVA5,com.google.code.gson,comment_4_7782968,0,p,You are welcome.,,,welcome
+6596072=>6596435=>a=>JAVA5,com.google.code.gson,comment_4_7782968,0,o,:D.,,,
+6596072=>6596435=>a=>JAVA5,com.google.code.gson,comment_5_7794536,0,o,I have no idea why someone would down vote your and my answers.,,,
+6596072=>6596435=>a=>JAVA5,com.google.code.gson,comment_5_7794536,1,p,I'll upvote this.,,,upvote
+6596072=>6596435=>a=>JAVA5,com.google.code.gson,comment_5_7794536,1,o,It's a decent answer.,,,
+6596072=>6596435=>a=>JAVA3,com.google.code.gson,comment_1_7782816,1,p,Thanks man!,,,
+6596072=>6596435=>a=>JAVA3,com.google.code.gson,comment_1_7782816,1,p,This worked just perfect!What does the annotation '@SerializedName' do?Thanks again!.,,,
+6596072=>6596435=>a=>JAVA3,com.google.code.gson,comment_2_7782905,1,o,"It provides a mapping between the key used in the JSON string, and the attribute in your Java class that you wish to map into.",,,
+6596072=>6596435=>a=>JAVA3,com.google.code.gson,comment_3_7782951,1,p,Very nice!,,,nice
+6596072=>6596435=>a=>JAVA3,com.google.code.gson,comment_3_7782951,1,p,Thanks again.,,,
+6596072=>6596435=>a=>JAVA3,com.google.code.gson,comment_4_7782968,1,p,You are welcome.,,,welcome
+6596072=>6596435=>a=>JAVA3,com.google.code.gson,comment_4_7782968,0,o,:D.,,,
+6596072=>6596435=>a=>JAVA3,com.google.code.gson,comment_5_7794536,0,o,I have no idea why someone would down vote your and my answers.,,,
+6596072=>6596435=>a=>JAVA3,com.google.code.gson,comment_5_7794536,1,p,I'll upvote this.,,,upvote
+6596072=>6596435=>a=>JAVA3,com.google.code.gson,comment_5_7794536,0,o,It's a decent answer.,,,
+6596072=>6596435=>a=>JAVA2,com.google.code.gson,comment_1_7782816,1,p,Thanks man!,,,
+6596072=>6596435=>a=>JAVA2,com.google.code.gson,comment_1_7782816,1,p,This worked just perfect!What does the annotation '@SerializedName' do?Thanks again!.,,,
+6596072=>6596435=>a=>JAVA2,com.google.code.gson,comment_2_7782905,0,o,"It provides a mapping between the key used in the JSON string, and the attribute in your Java class that you wish to map into.",,,
+6596072=>6596435=>a=>JAVA2,com.google.code.gson,comment_3_7782951,1,p,Very nice!,,,nice
+6596072=>6596435=>a=>JAVA2,com.google.code.gson,comment_3_7782951,1,p,Thanks again.,,,
+6596072=>6596435=>a=>JAVA2,com.google.code.gson,comment_4_7782968,1,p,You are welcome.,,,welcome
+6596072=>6596435=>a=>JAVA2,com.google.code.gson,comment_4_7782968,0,o,:D.,,,
+6596072=>6596435=>a=>JAVA2,com.google.code.gson,comment_5_7794536,0,o,I have no idea why someone would down vote your and my answers.,,,
+6596072=>6596435=>a=>JAVA2,com.google.code.gson,comment_5_7794536,1,p,I'll upvote this.,,,upvote
+6596072=>6596435=>a=>JAVA2,com.google.code.gson,comment_5_7794536,1,o,It's a decent answer.,,,
+12064106=>12065290=>a=>JAVA6,com.google.code.gson,comment_1_16114894,0,o,"the getters and setters are not needed to make this work, so I removed them for clarity and succinctness.",,,
+12064106=>12065290=>a=>JAVA6,com.google.code.gson,comment_2_16129705,1,o,this worked.,,,
+12064106=>12065290=>a=>JAVA6,com.google.code.gson,comment_2_16129705,1,p,thanks.,,,
+12064106=>12065290=>a=>JAVA6,com.google.code.gson,comment_3_16137742,1,p,my pleasure!,,,pleasure
+12064106=>12065290=>a=>JAVA6,com.google.code.gson,comment_3_16137742,0,o,:).,,,
+3769473=>4455636=>a=>JAVA3,com.google.code.gson,comment_1_4881126,1,p,Thanks for the response.,,,
+3769473=>4455636=>a=>JAVA3,com.google.code.gson,comment_1_4881126,1,o,"It isn't quite correct, but it led me to the correct answer.",,,correct
+3769473=>4455636=>a=>JAVA3,com.google.code.gson,comment_1_4881126,1,o,"You cannot directly create a JsonObject with a string, you must use JsonParser to create it.JsonParser parser 
+new JsonParser();JsonObject j 
+(JsonObject) parser.parse(json);.",,,
+10110805=>10110924=>a=>JAVA3,com.google.code.gson,comment_1_12955595,1,p,Thank you!,,,thank
+10110805=>10110924=>a=>JAVA3,com.google.code.gson,comment_1_12955595,0,o,I'm still figuring out how the server get the json object.,,,
+10110805=>10110924=>a=>JAVA3,com.google.code.gson,comment_2_12955822,0,o,"When sent in this way, the json will be the request body.",,,
+10110805=>10110924=>a=>JAVA3,com.google.code.gson,comment_2_12955822,0,o,"If you instead want the json to be in a POST var, the ajax request will need to be modified.",,,
+10110805=>10110924=>a=>JAVA3,com.google.code.gson,comment_3_26343235,0,o,But what if I want to Json object as it.,,,
+10110805=>10110924=>a=>JAVA3,com.google.code.gson,comment_3_26343235,0,o,i.e.,,,
+10110805=>10110924=>a=>JAVA3,com.google.code.gson,comment_3_26343235,0,o,Suppose I have JSONObject created using jsp and want to pass to next page then how to send JSONObject (jsonobj) in jquery POST.,,,
+10110805=>10110924=>a=>JAVA3,com.google.code.gson,comment_4_26354387,0,o,@Optimus both ways do send the jsonobject in a post request.,,,
+10110805=>10110924=>a=>JAVA3,com.google.code.gson,comment_4_26354387,0,o,"With the first, the jsonstring will be in the request body of the post request, and the second the jsonstring will be in a post variable named ""json"".",,,
+13988691=>13990370=>a=>JAVA5,com.google.code.gson,comment_1_19311413,1,p,Excellent.,gson=>com.google.code.gson,,excellent
+13988691=>13990370=>a=>JAVA5,com.google.code.gson,comment_1_19311413,1,p,Thanks.,gson=>com.google.code.gson,,
+13988691=>13990370=>a=>JAVA5,com.google.code.gson,comment_1_19311413,1,p,"Looks like my simple direct data binding wasn't sufficient for this, but having a custom deserializer looks to be a very flexible solution.",,,"simple,flexible"
+13988691=>13990370=>a=>JAVA5,com.google.code.gson,comment_1_19311413,1,p,"I'm sure you can probably do something similar in jackson, but I'm happy to switch to google gson as none of my client code outside the parser relies on any specific concrete json implementation.","jackson=>com.fasterxml.jackson.core,gson=>com.google.code.gson","jackson=>com.fasterxml.jackson.core,gson=>com.google.code.gson",happy
+13988691=>13990370=>a=>JAVA4,com.google.code.gson,comment_1_19311413,1,p,Excellent.,gson=>com.google.code.gson,,excellent
+13988691=>13990370=>a=>JAVA4,com.google.code.gson,comment_1_19311413,1,p,Thanks.,gson=>com.google.code.gson,,
+13988691=>13990370=>a=>JAVA4,com.google.code.gson,comment_1_19311413,1,p,"Looks like my simple direct data binding wasn't sufficient for this, but having a custom deserializer looks to be a very flexible solution.",,,"simple,flexible"
+13988691=>13990370=>a=>JAVA4,com.google.code.gson,comment_1_19311413,1,p,"I'm sure you can probably do something similar in jackson, but I'm happy to switch to google gson as none of my client code outside the parser relies on any specific concrete json implementation.","jackson=>com.fasterxml.jackson.core,gson=>com.google.code.gson","jackson=>com.fasterxml.jackson.core,gson=>com.google.code.gson",happy
+17017346=>17027014=>a=>JAVA3,com.google.code.gson,comment_1_24610664,1,p,"Can you please repost the relevant sections from your blog here so that in case your blog goes down, your answer is still useful in the future?",gson=>com.google.code.gson,,
+17017346=>17027014=>a=>JAVA3,com.google.code.gson,comment_2_24612051,0,o,@Kevin: I've updated the answer with some relevant code.,,,
+17017346=>17027014=>a=>JAVA3,com.google.code.gson,comment_2_24612051,0,o,:).,,,
+17017346=>17027014=>a=>JAVA3,com.google.code.gson,comment_3_24615391,1,p,+1 Thank you!,,,thank
+17017346=>17027014=>a=>JAVA3,com.google.code.gson,comment_3_24615391,0,o,").
+",,,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_1_26699200,1,p,"Thank you, but it's returning null.","gson=>com.google.code.gson,url_http://google-gson.googlecode.com/svn/trunk/gson/docs/javadocs/index.html?com/google/gson=>com.google.code.gson",,thank
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_1_26699200,0,o,"I am using this as you mentioned: Gson gson 
+new Gson(); Results res 
+gson.fromJson(jsonText, Results.class); System.out.println( res.getMediaUrl());.",,gson=>com.google.code.gson,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_2_26699305,0,p,Could you take a look to my gist please?,gson=>com.google.code.gson,,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_3_26699755,0,o,"[This is what I tried]( URL_https://gist.github.com/lumalav/6222895 file
+jsonparser-java).",,,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_4_26700081,0,o,"@LuisLavieri updated my answer, your ""root element"" is Response, so that's what you have to specify at gson.fromJson(...).",,gson=>com.google.code.gson,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_5_26700282,1,p,"Thanks, but how can I access MediaUrl?",gson=>com.google.code.gson,,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_5_26700282,1,o,"when I try to populate a List from ""response.getD().getResults()"" it throws me an IllegalException.",,,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_6_26701354,0,p,"@LuisLavieri I updated my answer, please note that I had to modify your java classes to get it work, how did you get them?",,,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_7_26707130,1,o,Now it is giving me Type mismatch: cannot convert from Object to BingSearchExample.Results and the option that is giving me is adding a cast to Results which does not work or change result type.,,,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_7_26707130,0,o,:(.,,,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_8_26707314,1,n,"I'm sorry, I was trying to follow your example.",,,sorry
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_8_26707314,0,o,Did you change jsonParser2.java?,,,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_8_26707314,1,o,that one throws me a NPE.,,,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_9_26707921,0,o,"@LuisLavieri use the code snippet in my answer for deserialization, that is use Gson class instead of JsonParser.",,gson=>com.google.code.gson,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_10_26709439,1,p,Thanks buddy.,gson=>com.google.code.gson,,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_10_26709439,1,p,That was perfect.,gson=>com.google.code.gson,,perfect
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_11_26739459,0,n,"Hi, sorry for bothering you again.",,,"sorry,bother"
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_11_26739459,0,o,But now I was trying to get MediaUrl from Thumbnail.java.,,,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_11_26739459,0,n,"I tried changing Result.java so it could return a List, and then in my code I tried in a loop thumbnails[i] 
+response.getD().getResults().thumbnail.get(i); , but, it is not working.",,,working
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_11_26739459,0,o,What is happening?,,,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_12_26741883,0,o,@LuisLavieri continuing the example in the answer: firstResult.getThumbnail().getMediaUrl().,,,
+18214447=>18214708=>a=>JAVA2,com.google.code.gson,comment_13_26742287,1,o,"I tried that too, but it's throwing a NPE.",,,
+14717210=>14717494=>a=>JAVA3,com.google.code.gson,comment_1_20592442,0,o,Does calling a member data pick up the content?,,,
+14717210=>14717494=>a=>JAVA3,com.google.code.gson,comment_2_20593432,0,o,I am not sure what you are talking about.,,,
+14717210=>14717494=>a=>JAVA3,com.google.code.gson,comment_2_20593432,0,o,"Write you code using gist.github.com, and type the link here to help people understand.",,,
+3340485=>3341439=>a=>JAVA3,com.google.code.gson,comment_1_3470701,1,p,"Thank you Arthur for your kind suggestion but the actual question is what is the best way to build so called generic ""shouldSkipClass"" method.","url_http://google-gson.googlecode.com/svn/tags/1.3/docs/javadoc=>com.google.code.gson,gson=>com.google.code.gson,url_http://code.google.com/p/google-gson=>google-gson,url_http://sites.google.com/site/gson/gson-user-guide#toc-user-defined-=>com.google.code.gson",,"thank,best"
+3340485=>3341439=>a=>JAVA3,com.google.code.gson,comment_1_3470701,1,o,"For now I worked on matt's idea and resolved my issue but still skeptic, in future this solution may break in certian scenarios.",,,
+3340485=>3341439=>a=>JAVA3,com.google.code.gson,comment_2_9005488,0,n,"Doesn't ""ExclusionStrategy"" need to be followed by ""()"" ?",,,
+3340485=>3341439=>a=>JAVA3,com.google.code.gson,comment_3_9008633,1,p,"@luke Yes, Thank you!.",,,thank
+3340485=>3341439=>a=>JAVA3,com.google.code.gson,comment_4_17924172,1,p,That's what I want!,,,
+3340485=>3341439=>a=>JAVA3,com.google.code.gson,comment_4_17924172,1,p,Thanks.,,,
+19065638=>19065858=>a=>JAVA6,com.google.code.gson,comment_1_28180147,1,p,That' what I need !,gson=>com.google.code.gson,,
+19065638=>19065858=>a=>JAVA6,com.google.code.gson,comment_1_28180147,1,p,"I have been trying something like that, although, I was using ArrayList instead of List.",gson=>com.google.code.gson,,
+19065638=>19065858=>a=>JAVA6,com.google.code.gson,comment_1_28180147,1,p,Thank You !!,,,thank
+19065638=>19065858=>a=>JAVA6,com.google.code.gson,comment_1_28180147,0,o,!.,,,
+19065638=>19065858=>a=>JAVA6,com.google.code.gson,comment_2_28180384,1,n,"Unfortunately, there is no way to do something like that:public class Response{ public int count; public List items; public Type classType 
+new TypeToken>() {}.getType(); }.",,,unfortunately
+19065638=>19065858=>a=>JAVA6,com.google.code.gson,comment_3_28180764,1,p,"see my edit I posted, hope it will help.",,,
+12204264=>12204850=>a=>JAVA5,com.google.code.gson,comment_1_16347138,0,p,Can you please elaborate it why we are doing this?,"gson=>com.google.code.gson,url_https://sites.google.com/site/gson/gson-user-guide#toc-custom-=>com.google.code.gson",,
+12204264=>12204850=>a=>JAVA5,com.google.code.gson,comment_1_16347138,1,p,I think its working but let me check completely then I'll accept it :).,"gson=>com.google.code.gson,url_https://sites.google.com/site/gson/gson-user-guide#toc-custom-=>com.google.code.gson",,working
+12204264=>12204850=>a=>JAVA5,com.google.code.gson,comment_2_16347339,1,p,"But it's omitting lot of data after again conversion from object to json string I am getting something like:{""targetIntent"":{ ""mAction"":""android.intent.action.VIEW"", ""mData"":{ }, ""mFlags"":0 }}.",,,
+12204264=>12204850=>a=>JAVA5,com.google.code.gson,comment_3_16347429,1,o,"""from object to json string"" is the other way (gson.toJson(Intent)) - you asked about gson.fromJson(String) here, that's not the same issue.",,gson=>com.google.code.gson,
+12204264=>12204850=>a=>JAVA5,com.google.code.gson,comment_4_16347632,0,o,yes but if I convert again object to json using gson.toJson then it should give the same strig.,,gson=>com.google.code.gson,
+12204264=>12204850=>a=>JAVA5,com.google.code.gson,comment_4_16347632,1,n,Isn't?And if I am using src.getAsString() it gives exception like:08-31 02:25:22.274: W/System.err(2946): java.lang.UnsupportedOperationException: JsonObjectI change src.getAsString() to src.toString().,,,exception
+12204264=>12204850=>a=>JAVA5,com.google.code.gson,comment_5_16347733,0,o,"UriDeserializer deserializes, while you're trying to serialize
+Intent object to JSON, to you should register JsonSerializer also, which will return new JsonPrimitive(src.toString());.",,,
+12204264=>12204850=>a=>JAVA5,com.google.code.gson,comment_6_16347823,1,n,...plus - since comments are getting too long and you resolved your original problem from question - I suggest to finish EOT here and ask new question if you have another problem.,,,long
+12204264=>12204850=>a=>JAVA5,com.google.code.gson,comment_7_16348094,1,p,Thanks a lot.,,,
+12204264=>12204850=>a=>JAVA5,com.google.code.gson,comment_7_16348094,1,o,Finally solved :).,,,
+4471584=>4483387=>a=>JAVA2,org.springframework,comment_1_4908727,1,p,"That's the nicest one so far, thanks (+1).","spring=>org.springframework,url_http://static.springsource.org/spring/docs/3.0.x/spring-framework=>org.springframework,url_http://static.springsource.org/spring/docs/3.0.x/spring-=>org.springframework",,nice
+4471584=>4483387=>a=>JAVA2,org.springframework,comment_2_6223780,1,n,"hi, I want to return a serialized object but using your method I have a problem, it doesn't compile because it says: HttpHeaders is abstract can not be instantiated.... can you explain me as well how you woud do this having to return the serialization of an object?","spring=>org.springframework,url_http://static.springsource.org/spring/docs/3.0.x/spring-framework=>org.springframework,url_http://static.springsource.org/spring/docs/3.0.x/spring-=>org.springframework",,
+4471584=>4483387=>a=>JAVA2,org.springframework,comment_2_6223780,1,p,now it works fine if not using ResponseEntity.,,,works
+4471584=>4483387=>a=>JAVA2,org.springframework,comment_3_6227617,1,o,@Lince81 org.springframework.http.HttpHeaders is not an abstract class ( URL_http://static.springsource.org/spring/docs/3.0.x/javadoc - api/org/springframework/http/HttpHeaders.html).,,"spring=>org.springframework,url_http://static.springsource.org/spring/docs/3.0.x/javadoc=>org.springframework",
+4471584=>4483387=>a=>JAVA2,org.springframework,comment_3_6227617,1,p,See if your import is correct and your libraries are updated.,,,correct
+4471584=>4483387=>a=>JAVA2,org.springframework,comment_4_6227657,0,o,@Lince81 the point of the example is returning an already serialized object as a String while setting a different Content-Type.,,,
+4471584=>4483387=>a=>JAVA2,org.springframework,comment_4_6227657,0,o,"If you want Spring to serialize an Object (as XML, JSON, etc) use @ResponseBody and configure the appropiate MessageConverters (see link in the answer).",,spring=>org.springframework,
+4471584=>4483387=>a=>JAVA2,org.springframework,comment_5_11854500,1,n,I needed a way to return a string that was already in JSON format and tell spring not to mess with it.,spring=>org.springframework,spring=>org.springframework,mess
+4471584=>4483387=>a=>JAVA2,org.springframework,comment_5_11854500,1,p,This works great.,,,"great,works"
+4471584=>4483387=>a=>JAVA2,org.springframework,comment_6_12233424,1,p,"Just wanted to point out that Spring MVC 3.1 allows you to specify a value for ""produces"" in the RequestMapping.",spring=>org.springframework,spring=>org.springframework,
+4471584=>4483387=>a=>JAVA2,org.springframework,comment_6_12233424,1,p,"So you can still use @ResponseBody, but you need @RequestMapping(method=RequestMethod.GET, value=""/fooBar"", produces=""application/json"").",,,
+4471584=>4483387=>a=>JAVA2,org.springframework,comment_7_13093073,1,p,"If I could vote for this multiple times, I would!.",spring=>org.springframework,,
+6019562=>6019761=>a=>JAVA3,org.springframework,comment_1_6972393,1,p,"This looks exactly like what I'm after, thanks.",spring=>org.springframework,,
+6019562=>6019761=>a=>JAVA3,org.springframework,comment_1_6972393,1,p,"So I don't think I need to create a new class as the JSON will be very simple like: {""pref1"", ""pref2""...}, so I was trying to get it added to a List (@RequestBody List body), but this doesn't seem to be getting the following error message, ""Can not deserialize instance of java.util.List out of START_OBJECT token"".",java.util.list=>java.util,java.util.list=>java.util,simple
+6019562=>6019761=>a=>JAVA3,org.springframework,comment_1_6972393,0,o,Any ideas?,,,
+6019562=>6019761=>a=>JAVA3,org.springframework,comment_2_6972493,0,o,"@NomNomNom I haven't tried that before, guess you'll have to read Jackson docs there.",,jackson=>com.fasterxml.jackson.core,
+6019562=>6019761=>a=>JAVA3,org.springframework,comment_3_6972502,0,p,"Ok, thanks again!.",jackson=>com.fasterxml.jackson.core,,
+6019562=>6019761=>a=>JAVA3,org.springframework,comment_4_6977386,0,o,You do not have to create a new class; but structure must match: you can not bind JSON Objects to Java arrays or lists (for obvious reasons).,,,
+6019562=>6019761=>a=>JAVA3,org.springframework,comment_4_6977386,0,p,"Your JSON has main-level Object with properties (foo, bar, baz), and each property has different kind of value (list, string/boolean, string/number).",,,
+11524843=>11525061=>a=>JAVA4,org.springframework,comment_1_15234373,1,p,Thanks for the complete answer!,"spring=>org.springframework,url_http://static.springsource.org/spring/docs/3.1.x/javadoc-=>org.springframework",,
+11524843=>11525061=>a=>JAVA4,org.springframework,comment_1_15234373,0,o,I guess easier approach will be passing integers as path variable?,,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_1_6801909,0,o,or use I think.,,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_2_6833181,1,n,"I already have serialization OUT (ResponseBody, my problem is serialization IN (RequestBody).","jackson=>com.fasterxml.jackson.core,spring=>org.springframework,url_http://static.springsource.org/spring/docs/3.0.x/javadoc-api/org/springfra=>org.springframework,url_http://static.springsource.org/spring/docs/current/spring-framework-reference/html/validation.html#format-configuring-formatting-mvc=>org.springframework,url_http://static.springsource.org/spring/docs/current/spring-framework-=>org.springframework",,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_3_6833360,0,o,"MappingJacksonHttpMessageConverter is already registered, but it works for me only for ResponseBody, how do I make it work for RequestBody?",,jackson=>com.fasterxml.jackson.core,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_4_6834046,0,o,"@Eran, see my comment.",,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_5_6834487,0,o,"@Danny, Thanks for the update, this is exactly what I have, and I used ""application/json"" as the content type, could it be that only very simple Beans can be used?",,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_5_6834487,0,o,e.g.,,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_5_6834487,0,o,only primitive types?,,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_5_6834487,0,o,maybe that's what I'm missing...,,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_6_6849549,0,n,"@Eran, Have you tried log4j, you will see serialization exception or error coming from controller.",log4j=>log4j,log4j=>log4j,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_7_6872301,0,o,"No exception in log4j, I'm close to giving up... is there a working sample out there I can start from?",,log4j=>log4j,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_7_6872301,0,o,(a simple Response/Request Body + JSON / JQuery test?,,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_7_6872301,0,o,).,,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_8_6876903,0,p,"@Eran I know you have solved your problem in the meantime, but I have now added a working example to my answer.",,,working
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_9_6890527,1,p,If I could I would have +10 :) thank you!.,,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_10_9056500,1,p,"@Eran Medan, you say you changed configuration of xml file and it worked however this answer doesn't include anything like that.",,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_10_9056500,0,o,Which one to follow?,,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_11_9105231,1,p,"@kamaci - see my update - the change that made it work was so small it's hardly noticable, you can see the working solution both in this answer (on which we are commenting) or in my update.",,,"noticable,hardly,working"
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_12_11703007,1,p,@SeanPatrickFloyd Wonderful.That's really clear.,,,clear
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_12_11703007,1,n,"That said, I noticed a slight problem which surfaced when I tried this.",,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_12_11703007,0,o,"The post body in the example is quoted as { ""left"": 13 ; ""right"" : 7 } which isn't legal JSON.",,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_12_11703007,1,n,I was getting 400 bad request codes when I tried it.,,,bad
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_12_11703007,1,o,Then I noticed that there was a semi- colon in there which isn't part of the JSON syntax.,,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_12_11703007,1,p,"I found success by posting the following through curl - curl -v -H ""Content-Type: application/json"" -X POST -d ""{\""left\"":13,\""right\"":7}"" URL_http://localhost:8080/test/math .",,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_13_14575695,1,p,"@StuartBlair fixed the semicolon, thanks.",,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_14_26512379,0,o,@SeanPatrickFloyd if i don't have pojo means what should i do for example math(@RequestBody final Request request) you have Request java but i don't have class for json at that situation what i do?,,,
+5908466=>5908632=>a=>JAVA10,org.springframework,comment_14_26512379,0,o,URL_http://stackoverflow.com/questions/18102452/spring-mvc-415-unsupported-media - type.,,spring=>org.springframework,
+13810004=>13812366=>a=>JAVA3,org.springframework,comment_1_19009357,0,o,"This would deliver HTML Code (Model delivered form controller, view delivered from Template) to the client.",,,
+13810004=>13812366=>a=>JAVA3,org.springframework,comment_1_19009357,0,o,This would be my understanding of a partial.,,,
+13810004=>13812366=>a=>JAVA3,org.springframework,comment_1_19009357,0,o,Then you would need to tell JQuery to expect HTML or Text but not JSON.,,,
+5726583=>5726637=>a=>JAVA2,org.springframework,comment_1_6549233,1,p,"Thanks, I'm considering a wrapper Array as the last resort.",,,
+5726583=>5726637=>a=>JAVA2,org.springframework,comment_1_6549233,0,o,What is the work around you were referring to?,,,
+5726583=>5726637=>a=>JAVA2,org.springframework,comment_2_6549391,0,o,@Srirangan: the workarround is the PersonContext class - it is some kind of DTO.,,,
+5726583=>5726637=>a=>JAVA2,org.springframework,comment_3_6549524,0,o,"@Srirangan I said there may
+be a workaround.",,,
+5726583=>5726637=>a=>JAVA2,org.springframework,comment_3_6549524,0,o,I am not aware of one myself.,,,
+12464586=>12465716=>a=>JAVA8,org.springframework,comment_1_16767242,0,o,matt b...bulls eye..i have also suggested the same answer...,,,
+12464586=>12465716=>a=>JAVA8,org.springframework,comment_2_16779084,1,n,"sorry, it should be run/save but still same problem.",spring=>org.springframework,,sorry
+12464586=>12465716=>a=>JAVA8,org.springframework,comment_3_16785580,0,o,"I don't think you need the 
+in the @RequestMapping(/application/*).",,,
+12464586=>12465716=>a=>JAVA8,org.springframework,comment_3_16785580,0,o,Did you take my suggestion to turn up logging to examine exactly which methods are bound to exactly which URLs?,,,
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_1_12279814,1,o,"Thanks, I'll give this a shot.",,,
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_1_12279814,0,o,I'm curious to know _why_ this doesn't work out-of-the-box do you know?,,,
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_1_12279814,0,o,"Also, I knew it was only a matter of time 'til you posted an answer :).",,,
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_2_12287668,0,o,@MLL - I have updated my answer.,,,
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_2_12287668,1,n,I believe it is not working out of the box because your then items in your collection do not have badge as a root element.,,,working
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_3_12288217,1,p,"Oh, interesting.",,,interesting
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_3_12288217,0,o,"Taking another look at the difference between the JSON I can unmarshall, and the JSON I can't, I see what you mean.",,,
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_4_12430713,1,p,This approach is NOT the standard one.,,,standard
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_4_12430713,1,p,To produce & consume standard JSON into Jersey one have to use Jackson!,"jackson=>com.fasterxml.jackson.core,jersey=>com.sun.jersey","jackson=>com.fasterxml.jackson.core,jersey=>com.sun.jersey",standard
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_4_12430713,1,p,"This is easy, quick, and was designed as this by the Jersey team.",jersey=>com.sun.jersey,jersey=>com.sun.jersey,easy
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_5_12431100,0,o,@yvesamsellem - (-1?),,,
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_5_12431100,1,p,This approach uses the standard 'MessageBodyReader/Writer interfaces to interact with the Jersey client API and clearly demonstrates that you do NOT need to use Jackson to produce & consume standard JSON into Jersey.,"jackson=>com.fasterxml.jackson.core,jersey=>com.sun.jersey","jackson=>com.fasterxml.jackson.core,jersey=>com.sun.jersey",standard
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_5_12431100,0,o,"An earlier version of MOXy is already in GlassFish ( URL_http://blog.bdoughan.com/2012/02/glassfish-312-is-full-of - moxy.html), and a version containing the JSON binding will be included in a future GlassFish release.",,glassfish=>org.glassfish.main.core,
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_5_12431100,0,p,The stack trace clearly indicated that a JAXB implementation was being used with the JSON and MOXy supports more JAXB annotations than Jackson does.,"jackson=>com.fasterxml.jackson.core,jaxb=>javax.xml","jackson=>com.fasterxml.jackson.core,jaxb=>javax.xml",
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_6_12431581,1,p,"@BlaiseDoughan Yes, is uses a standard approach to (un)marshall representations but IT IS NOT the standard approach to (un)marshall JSON in Jersey: Jackson is.","jackson=>com.fasterxml.jackson.core,jersey=>com.sun.jersey","jackson=>com.fasterxml.jackson.core,jersey=>com.sun.jersey",standard
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_7_12431633,0,o,"@yvesamsellem by ""standard,"" you mean _de facto_ standard, right?",,,
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_7_12431633,0,o,:).,,,
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_8_12441434,0,o,"@M LL yes, I mean built in; designed this way by the Jersey developers.",,jersey=>com.sun.jersey,
+9627170=>9667802=>a=>JAVA11,com.sun.jersey,comment_9_14949339,0,o,"@yvesamsellem - FYI, Tweet from Jersey regarding MOXy: URL_https://twitter.com/gf_jersey/status/218036096758579202 .",,jersey=>com.sun.jersey,
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_1_12279814,0,o,"Thanks, I'll give this a shot.",,,
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_1_12279814,0,o,I'm curious to know _why_ this doesn't work out-of-the-box do you know?,,,
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_1_12279814,0,o,"Also, I knew it was only a matter of time 'til you posted an answer :).",,,
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_2_12287668,0,o,@MLL - I have updated my answer.,,,
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_2_12287668,1,n,I believe it is not working out of the box because your then items in your collection do not have badge as a root element.,,,working
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_3_12288217,1,p,"Oh, interesting.",,,interesting
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_3_12288217,0,o,"Taking another look at the difference between the JSON I can unmarshall, and the JSON I can't, I see what you mean.",,,
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_4_12430713,1,p,This approach is NOT the standard one.,,,standard
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_4_12430713,1,p,To produce & consume standard JSON into Jersey one have to use Jackson!,"jackson=>com.fasterxml.jackson.core,jersey=>com.sun.jersey","jackson=>com.fasterxml.jackson.core,jersey=>com.sun.jersey",standard
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_4_12430713,1,p,"This is easy, quick, and was designed as this by the Jersey team.",jersey=>com.sun.jersey,jersey=>com.sun.jersey,easy
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_5_12431100,0,o,@yvesamsellem - (-1?),,,
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_5_12431100,1,p,This approach uses the standard 'MessageBodyReader/Writer interfaces to interact with the Jersey client API and clearly demonstrates that you do NOT need to use Jackson to produce & consume standard JSON into Jersey.,"jackson=>com.fasterxml.jackson.core,jersey=>com.sun.jersey","jackson=>com.fasterxml.jackson.core,jersey=>com.sun.jersey",standard
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_5_12431100,0,o,"An earlier version of MOXy is already in GlassFish ( URL_http://blog.bdoughan.com/2012/02/glassfish-312-is-full-of - moxy.html), and a version containing the JSON binding will be included in a future GlassFish release.",,glassfish=>org.glassfish.main.core,
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_5_12431100,0,p,The stack trace clearly indicated that a JAXB implementation was being used with the JSON and MOXy supports more JAXB annotations than Jackson does.,"jackson=>com.fasterxml.jackson.core,jaxb=>javax.xml","jackson=>com.fasterxml.jackson.core,jaxb=>javax.xml",
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_6_12431581,1,p,"@BlaiseDoughan Yes, is uses a standard approach to (un)marshall representations but IT IS NOT the standard approach to (un)marshall JSON in Jersey: Jackson is.","jackson=>com.fasterxml.jackson.core,jersey=>com.sun.jersey","jackson=>com.fasterxml.jackson.core,jersey=>com.sun.jersey",standard
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_7_12431633,0,o,"@yvesamsellem by ""standard,"" you mean _de facto_ standard, right?",,,
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_7_12431633,0,o,:).,,,
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_8_12441434,0,o,"@M LL yes, I mean built in; designed this way by the Jersey developers.",,jersey=>com.sun.jersey,
+9627170=>9667802=>a=>JAVA12,com.sun.jersey,comment_9_14949339,0,o,"@yvesamsellem - FYI, Tweet from Jersey regarding MOXy: URL_https://twitter.com/gf_jersey/status/218036096758579202 .",,jersey=>com.sun.jersey,
+6553051=>6553482=>a=>JAVA3,com.fasterxml.jackson,comment_1_7770816,1,p,"This is same as described in URL_http://wiki.fasterxml.com/JacksonHowToCustomDeserializers , which I have already followed!.","jackson=>com.fasterxml.jackson.core,url_http://wiki.fasterxml.com/jacksonhowtocustomdeserializers=>com.fasterxml.jackson","jackson=>com.fasterxml.jackson.core,url_http://wiki.fasterxml.com/jacksonhowtocustomdeserializers=>com.fasterxml.jackson",
+6553051=>6553482=>a=>JAVA3,com.fasterxml.jackson,comment_2_7770880,0,o,Ah.,,,
+6553051=>6553482=>a=>JAVA3,com.fasterxml.jackson,comment_2_7770880,1,p,"I read the original question too fast, maybe.","jackson=>com.fasterxml.jackson.core,url_http://wiki.fasterxml.com/jacksonhowtocustomdeserializers=>com.fasterxml.jackson",,fast
+6553051=>6553482=>a=>JAVA3,com.fasterxml.jackson,comment_2_7770880,0,o,Taking another look...,,,
+6553051=>6553482=>a=>JAVA3,com.fasterxml.jackson,comment_3_7771174,0,o,What I originally posted addressed the question you asked correctly.,,,
+6553051=>6553482=>a=>JAVA3,com.fasterxml.jackson,comment_3_7771174,0,o,I'll update this post with a full demo application.,,,
+19568867=>19600499=>a=>JAVA6,com.fasterxml.jackson,comment_1_29208923,1,p,Great!,jackson=>com.fasterxml.jackson.core,,great
+19568867=>19600499=>a=>JAVA6,com.fasterxml.jackson,comment_1_29208923,1,p,thank you a lot for the answer.,jackson=>com.fasterxml.jackson.core,,thank
+19568867=>19600499=>a=>JAVA6,com.fasterxml.jackson,comment_1_29208923,1,p,"Finally we gecided to go with TransactionWrapper object and put @JsonRootName(""transaction"") on its Transaction field, but your suggestion looks very interesting!.",,,interesting
+19568867=>19600499=>a=>JAVA6,com.fasterxml.jackson,comment_2_29224616,1,p,TransactionWrapper sounds good.,,,good
+19568867=>19600499=>a=>JAVA6,com.fasterxml.jackson,comment_2_29224616,0,o,I thought about it also.,,,
+19568867=>19600499=>a=>JAVA6,com.fasterxml.jackson,comment_2_29224616,1,n,Anyway you could reuse mixin feature to solve another problems in the future.,,,
+4442966=>4484534=>a=>JAVA2,com.fasterxml.jackson,comment_1_5037211,1,p,+1 for cleaner solution.,,,clean
+4442966=>4484534=>a=>JAVA2,com.fasterxml.jackson,comment_1_5037211,1,o,However I needed to use SerializationConfig.Feature.INDENT_OUTPUT.,,,
+4442966=>4484534=>a=>JAVA2,com.fasterxml.jackson,comment_2_5038006,0,o,ah.,,,
+4442966=>4484534=>a=>JAVA2,com.fasterxml.jackson,comment_2_5038006,1,n,"my bad, will fix the typo.",,,bad
+4442966=>4484534=>a=>JAVA2,com.fasterxml.jackson,comment_3_15648555,1,p,wow that is nice.,,,"wow,nice"
+4442966=>4484534=>a=>JAVA2,com.fasterxml.jackson,comment_3_15648555,1,p,very helpful !.,,,helpful
+4442966=>4484534=>a=>JAVA2,com.fasterxml.jackson,comment_4_21328319,0,o,Note if you are using Spring 3.1+ you can easily use a custom ObjectMapper by following Ryan's answer to URL_http://stackoverflow.com/questions/7672211/java - spring-jackons-date-serialization.,,spring=>org.springframework,
+4356854=>4369841=>a=>JAVA4,com.fasterxml.jackson,comment_1_4758313,1,p,This seems quite straightforward.,"url_http://jackson.codehaus.org=>org.codehaus.jackson,jackson=>com.fasterxml.jackson.core,voldemort=>voldemort",,straightforward
+4356854=>4369841=>a=>JAVA4,com.fasterxml.jackson,comment_1_4758313,0,o,"Just to make sure - this byte[] is a JSON string representation, not a serialized Java object, right?",,,
+4356854=>4369841=>a=>JAVA4,com.fasterxml.jackson,comment_2_4758757,0,o,We are probably using different versions of of Jackson.,,jackson=>com.fasterxml.jackson.core,
+4356854=>4369841=>a=>JAVA4,com.fasterxml.jackson,comment_2_4758757,0,o,"In 1.6.3 writeValueAsString returns a String, and readValue for byte[] has some extra params.",,,
+4356854=>4369841=>a=>JAVA4,com.fasterxml.jackson,comment_2_4758757,1,p,"Anyway, I tried your approach and it works like a charm!",jackson=>com.fasterxml.jackson.core,,"works,charm"
+4356854=>4369841=>a=>JAVA4,com.fasterxml.jackson,comment_2_4758757,1,p,Thanks..,jackson=>com.fasterxml.jackson.core,,
+4356854=>4369841=>a=>JAVA4,com.fasterxml.jackson,comment_3_4761323,1,n,"Ah, my bad -- it should be ""writeValueAsBytes()"" instead.",,,bad
+4356854=>4369841=>a=>JAVA4,com.fasterxml.jackson,comment_3_4761323,1,p,"Glad to hear it works; this is a common use case, although I haven't used it with V myself yet.",,,"works,glad"
+13551994=>13559143=>a=>JAVA7,com.fasterxml.jackson,comment_1_18575524,1,n,"It sounds like a bug, and definitely should not break.",,,bug
+5643714=>6654799=>a=>JAVA2,com.fasterxml.jackson,comment_1_7871527,1,p,That maybe correct.,jackson=>com.fasterxml.jackson.core,,correct
+5643714=>6654799=>a=>JAVA2,com.fasterxml.jackson,comment_1_7871527,0,o,"I'm not really sure, this thread is a few months old and I've shifted projects so I can't test it on that code base, but I'll play around when I have time.",,,
+5643714=>6654799=>a=>JAVA2,com.fasterxml.jackson,comment_1_7871527,0,o,:-).,,,
+5643714=>6654799=>a=>JAVA2,com.fasterxml.jackson,comment_2_7872007,0,p,Spring and Jersey add funny things to JSON handling.,"spring=>org.springframework,jersey=>com.sun.jersey","spring=>org.springframework,jersey=>com.sun.jersey",funny
+5643714=>6654799=>a=>JAVA2,com.fasterxml.jackson,comment_2_7872007,1,o,There are a few things that require special configurations in order to get default Jackson behavior.,,jackson=>com.fasterxml.jackson.core,
+5643714=>6654799=>a=>JAVA2,com.fasterxml.jackson,comment_2_7872007,1,p,"If you do ever happen to figure out what's going on, do please post an update.","spring=>org.springframework,jersey=>com.sun.jersey",,
+5643714=>6654799=>a=>JAVA2,com.fasterxml.jackson,comment_2_7872007,0,o,I'm sure I'm not the only curious one.,,,
+4486787=>7546047=>a=>JAVA7,com.fasterxml.jackson,comment_1_9784703,0,o,"Ariel, is there any way to declare this external to the class?",,,
+4486787=>7546047=>a=>JAVA7,com.fasterxml.jackson,comment_2_9965184,0,o,"I haven't done it but I believe that you can get somewhere in the annotations processing code and add the behavior programatically, although I can't think why you would like to do it.",,,
+4486787=>7546047=>a=>JAVA7,com.fasterxml.jackson,comment_2_9965184,0,o,Can you give me an example?,,,
+4486787=>7546047=>a=>JAVA7,com.fasterxml.jackson,comment_3_9969007,0,o,I'm serializing classes that I do not own (cannot modify).,,,
+4486787=>7546047=>a=>JAVA7,com.fasterxml.jackson,comment_3_9969007,1,p,"In one view, I'd like to serialize with a certain set of fields.",,,
+4486787=>7546047=>a=>JAVA7,com.fasterxml.jackson,comment_3_9969007,0,o,"In another view, I want a different set of fields serialized (or perhaps rename the properties in the JSON).",,,
+4486787=>7546047=>a=>JAVA7,com.fasterxml.jackson,comment_4_10673569,1,p,thanks !,,,
+4486787=>7546047=>a=>JAVA7,com.fasterxml.jackson,comment_4_10673569,1,p,great answer !.,,,great
+4486787=>7546047=>a=>JAVA7,com.fasterxml.jackson,comment_5_22910044,1,o,Why this answer is not accepted yet?,,,
+4486787=>7546047=>a=>JAVA7,com.fasterxml.jackson,comment_6_23285529,1,p,youse rockses!,,,
+4486787=>7546047=>a=>JAVA7,com.fasterxml.jackson,comment_6_23285529,1,p,thank you :).,,,thank
+4486787=>7546047=>a=>JAVA7,com.fasterxml.jackson,comment_7_23285538,1,p,"i must add that you do need the (ignoreUnknown 
+true) when annotating your class otherwise it won't work.",,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_1_28762726,1,p,"Tom, thank you for the information.","url_https://github.com/fasterxml/jackson=>com.fasterxml.jackson,jackson=>com.fasterxml.jackson.core,url_https://github.com/fasterxml/jackson-=>com.fasterxml.jackson,junit=>junit",,thank
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_1_28762726,0,o,"I added in the code you suggested, but when I run the program I only see the keyvalues in the JSON.",,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_1_28762726,0,o,For some reason I don't see the nested visibility fields.,,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_1_28762726,0,o,"I'll attach my SensorGenerator.java class, perhaps I'm missing something :-).",,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_2_28766804,0,o,here it is as a JUnit test.,,junit=>junit,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_2_28766804,1,p,This test works for me.,,,works
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_2_28766804,0,o,What version Jackson are you using?,,jackson=>com.fasterxml.jackson.core,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_2_28766804,0,o,URL_https://gist.github.com/TomDemeranville/7009250 .,,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_3_28767504,0,o,I'm using camel-jackson 2.12.1.,,"jackson=>com.fasterxml.jackson.core,camel=>camel",
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_3_28767504,0,o,I have the following dependency in my pom.xml: org.apache.camel camel-jackson ${camel} where I define ${camel} above as 2.12.1.,,"jackson=>com.fasterxml.jackson.core,camel=>camel,org.apache.camel=>org.apache.camel",
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_4_28767832,0,o,I just noticed that I'm using different libraries that you are for JsonAnyGetter and JsonProperty.,,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_4_28767832,0,o,You are using: import com.fasterxml.jackson.annotation.JsonAnyGetter;import com.fasterxml.jackson.annotation.JsonProperty; and I'm using import org.codehaus.jackson.annotate.JsonAnyGetter;import org.codehaus.jackson.annotate.JsonProperty; Did you specify the com.fasterxml library in your pom.xml?,,"jackson=>com.fasterxml.jackson.core,com.fasterxml=>com.fasterxml",
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_5_28768104,0,o,You are using an old version.,,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_5_28768104,0,o,The new version uses the fasterxml namespace.,,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_5_28768104,0,o,I'm using Jackson 2.2.3 I think.,,jackson=>com.fasterxml.jackson.core,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_5_28768104,0,o,You may have both versions on your classpath.,,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_6_28768170,0,o,Are you specifying that newer version in your pom.xml or your applicationContext.xml?,,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_6_28768170,0,o,I looked in both and I don't seem to specify a version for the Jackson library.,,jackson=>com.fasterxml.jackson.core,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_6_28768170,0,o,I guess that's why its using an older version.,,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_7_28768284,0,o,Here's all I've currently specified in my applicationContext.xml for marshalling to JSON: .,,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_8_28768770,0,o,Can you post your pom.xml and Camel applicationContext.xml files with your JUnit test?,,"camel=>camel,junit=>junit",
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_8_28768770,0,o,I want to see if I can figure out what to add to call the newer Jackson library.,,jackson=>com.fasterxml.jackson.core,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_8_28768770,1,p,Thanks.,"camel=>camel,junit=>junit",,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_9_28768891,0,o,"Btw, I looked under my .classpath under my Eclipse project and found out that yes, I am specifying multiple versions of the Jackson library, i.e.",,jackson=>com.fasterxml.jackson.core,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_9_28768891,0,o,: .,,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_10_28768964,0,o,And then further down in my .classpath I have: with a bunch of attributes set.,,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_11_28769932,0,o,Mine is imported as a dependency of restlet 2.2-M3.,,restlet=>restlet,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_12_28769986,1,p,I'm also using com.fasterxml.jackson.dataformat jackson-dataformat-csv 2.2.3 which seems to be importing it as well.,"jackson=>com.fasterxml.jackson.core,jackson-dataformat-csv=>jackson-dataformat-csv,com.fasterxml=>com.fasterxml,com.fasterxml.jackson.dataformat=>com.fasterxml.jackson.dataformat","jackson=>com.fasterxml.jackson.core,jackson-dataformat-csv=>jackson-dataformat-csv,com.fasterxml=>com.fasterxml,com.fasterxml.jackson.dataformat=>com.fasterxml.jackson.dataformat",well
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_12_28769986,0,o,"Part of my jackson is 2.1, other parts 2.2.3.",,jackson=>com.fasterxml.jackson.core,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_12_28769986,0,o,Doh.,,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_13_28771382,0,o,"I couldn't seem to get maven to pull down the fasterxml.jackson.library, so I downloaded the jackson-annotations-2.2.3.jar and added it to my classpath.",,jackson=>com.fasterxml.jackson.core,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_13_28771382,0,o,"It now points my SensorGenerator class to the same library as yours, but I still don't get the nested visibility.",,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_14_28775224,1,p,Thanks for the info.,jackson=>com.fasterxml.jackson.core,,
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_14_28775224,1,n,I discovered some Jackson library conflicts in my pom.xml that I'm cleaning up.,jackson=>com.fasterxml.jackson.core,jackson=>com.fasterxml.jackson.core,"clean,conflict"
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_15_28781015,1,p,well I hope it works for you.,jackson=>com.fasterxml.jackson.core,,"works,well"
+19389696=>19391576=>a=>JAVA10,com.fasterxml.jackson,comment_15_28781015,1,p,Please mark the answer as accepted :).,,,
+10145621=>10147949=>a=>JAVA2,com.fasterxml.jackson,comment_1_13024825,0,o,Yes.,,,
+10145621=>10147949=>a=>JAVA2,com.fasterxml.jackson,comment_1_13024825,0,o,I could use JsonNode.iterator() to do that..,,,
+10145621=>10147949=>a=>JAVA2,com.fasterxml.jackson,comment_1_13024825,1,p,But I need the entire sub tree under the node(including any subtree under the child node) which is why I should use the recursive function that gbegley has suggested.,,,recursive
+10145621=>10147949=>a=>JAVA2,com.fasterxml.jackson,comment_1_13024825,1,p,Thanks!.,,,
+18895656=>18902423=>a=>JAVA7,com.fasterxml.jackson,comment_1_28265879,1,p,"This is a valid solution as well, but I would like to stay away from manually serializing objects.","jackson=>com.fasterxml.jackson.core,url_http://jackson.codehaus.org/1.4.0/javadoc/org/codehaus/jackson=>org.codehaus.jackson",,well
+18895656=>18902423=>a=>JAVA7,com.fasterxml.jackson,comment_1_28265879,1,p,Thanks.,"jackson=>com.fasterxml.jackson.core,url_http://jackson.codehaus.org/1.4.0/javadoc/org/codehaus/jackson=>org.codehaus.jackson",,
+12427167=>14129419=>a=>JAVA6,com.fasterxml.jackson,comment_1_19566443,1,p,Thanks @ProgrammerBruce for your further help.,jackson=>com.fasterxml.jackson.core,,
+12427167=>14129419=>a=>JAVA6,com.fasterxml.jackson,comment_1_19566443,0,p,I will check this works when I get back to work later in the new year.,jackson=>com.fasterxml.jackson.core,,works
+12427167=>14129419=>a=>JAVA6,com.fasterxml.jackson,comment_1_19566443,0,o,BTW - is there a strategy that will match ANY case?,,,
+12427167=>14129419=>a=>JAVA6,com.fasterxml.jackson,comment_1_19566443,0,o,"If no, perhaps you could post one.",,,
+12427167=>14129419=>a=>JAVA6,com.fasterxml.jackson,comment_1_19566443,0,o,I am trying to deal with a customer who could change their conventions at any time.,,,
+12427167=>14129419=>a=>JAVA6,com.fasterxml.jackson,comment_2_19599356,1,n,"Last I looked (a year or so ago), name translations only go in one direction (either from Java property/field names to JSON element names, or vice versa), and so implementing case-insensitive matching wasn't as trivial as it otherwise could be.",,,trivial
+11376304=>11377362=>a=>JAVA1,com.fasterxml.jackson,comment_1_17941314,1,p,"Hey, that's my article!",jackson=>com.fasterxml.jackson.core,,
+11376304=>11377362=>a=>JAVA1,com.fasterxml.jackson,comment_1_17941314,1,p,Glad you found it helpful :).,jackson=>com.fasterxml.jackson.core,,"helpful,glad"
+11376304=>11377362=>a=>JAVA1,com.fasterxml.jackson,comment_2_31287183,1,p,Saved my day!,,,
+11376304=>11377362=>a=>JAVA1,com.fasterxml.jackson,comment_2_31287183,1,p,Thanks.,,,
+13871471=>13872930=>a=>JAVA10,com.fasterxml.jackson,comment_1_19108590,1,p,"Thanks Charlie, where would this new class, JacksonObjectMapProvider, get called?",jackson=>com.fasterxml.jackson.core,jackson=>com.fasterxml.jackson.core,
+13871471=>13872930=>a=>JAVA10,com.fasterxml.jackson,comment_1_19108590,0,o,Do I just included it in any package and it will give me the solution?,,,
+13871471=>13872930=>a=>JAVA10,com.fasterxml.jackson,comment_1_19108590,1,p,Thank you so much!,jackson=>com.fasterxml.jackson.core,,thank
+13871471=>13872930=>a=>JAVA10,com.fasterxml.jackson,comment_1_19108590,1,p,I'll try it tomorrow and post the results!.,jackson=>com.fasterxml.jackson.core,,
+13871471=>13872930=>a=>JAVA10,com.fasterxml.jackson,comment_2_19119284,0,o,"@socal_javaguy - Maybe, depending upon how you are setting up the container that your resources live in.",,,
+13871471=>13872930=>a=>JAVA10,com.fasterxml.jackson,comment_2_19119284,0,o,"Jersey does have a Package Scanning option (which you would need to include the package containing your ObjectMap Provider, and the com.fasterxml.jackson.jaxrs.json containing the MessageBodyWriters included with Jackson).",,"jackson=>com.fasterxml.jackson.core,jersey=>com.sun.jersey",
+13871471=>13872930=>a=>JAVA10,com.fasterxml.jackson,comment_2_19119284,1,p,If your ObjectMap Provider is in your JaxRS application it will be resolved [by this code]( URL_https://github.com/FasterXML /jackson-jaxrs-json-provider/blob/jackson-jaxrs-json-provider-2.1.2/src/main/j ava/com/fasterxml/jackson/jaxrs/json/JacksonJsonProvider.java#L627).,"jackson=>com.fasterxml.jackson.core,url_https://github.com/fasterxml=>com.fasterxml.jackson","jackson=>com.fasterxml.jackson.core,url_https://github.com/fasterxml=>com.fasterxml.jackson",
+13871471=>13872930=>a=>JAVA10,com.fasterxml.jackson,comment_3_19119417,1,n,"That said, the Package Scanner doesn't necessarily work well across JARs in your war on some containers (e.g.",,,well
+13871471=>13872930=>a=>JAVA10,com.fasterxml.jackson,comment_3_19119417,0,o,"Websphere)... You could use Guice and bind your providers,MessageBodyReaders/Writers, and Providers explicitly... you could also create an explicit [Application]( URL_http://docs.oracle.com/javaee/6/ap i/javax/ws/rs/core/Application.html) and define your classes / singleton objects there.",,guice=>com.google.code.guice,
+14434679=>14447933=>a=>JAVA1,com.fasterxml.jackson,comment_1_20156172,1,p,That's exactly what I was looking for!,jackson=>com.fasterxml.jackson.core,,
+14434679=>14447933=>a=>JAVA1,com.fasterxml.jackson,comment_1_20156172,0,o,How recent does my version need to be?,,,
+14434679=>14447933=>a=>JAVA1,com.fasterxml.jackson,comment_2_20161331,1,p,"Check your JsonSerialize.Inclusion or JsonInclude.Include (if using Jackson 2.x) enum for a NON_DEFAULT option, it looks like it's been around longer than I thought.",jackson=>com.fasterxml.jackson.core,jackson=>com.fasterxml.jackson.core,
+11620130=>11621343=>a=>JAVA3,com.fasterxml.jackson,comment_1_15389702,1,p,Your solution is probably the only working in this situation.,"jackson=>com.fasterxml.jackson.core,url_https://github.com/fasterxml/jackson-core/issues=>com.fasterxml.jackson,url_https://github.com/fasterxml=>com.fasterxml.jackson",,working
+11620130=>11621343=>a=>JAVA3,com.fasterxml.jackson,comment_1_15389702,0,o,"However, I'm using final fields to force immutability hence thread safety without the need of using volatile fields, and I'm assuming that Jackson doesn't use reflection to set fields when providing a valid annotated constructor.",,jackson=>com.fasterxml.jackson.core,
+11620130=>11621343=>a=>JAVA3,com.fasterxml.jackson,comment_1_15389702,1,p,"Using reflection would probably lead to possible memory visibility issues on that classes, and this is what I was trying to avoid using immutable classes.I think there is no other solution than querying an enhancement request to Jackson: thank you very much for your answer!.",jackson=>com.fasterxml.jackson.core,jackson=>com.fasterxml.jackson.core,"thank,memory"
+11620130=>11621343=>a=>JAVA3,com.fasterxml.jackson,comment_2_15411714,1,p,"You are correct in that if a @JsonCreator is used to pass a property value, no setter will be used.",,,correct
+6638059=>6638103=>a=>JAVA3,com.fasterxml.jackson,comment_1_7842335,1,p,Jackson is the only JSON-to/from-Java library I've seen that will deserialize any Json object of arbitrary complexity to a Map in just one simple line.,jackson=>com.fasterxml.jackson.core,jackson=>com.fasterxml.jackson.core,simple
+6638059=>6638103=>a=>JAVA3,com.fasterxml.jackson,comment_1_7842335,1,n,Note that the casts to Map and String would be unnecessary if a Map parameterized type reference were used with the call to readValue.,,,
+6638059=>6638103=>a=>JAVA3,com.fasterxml.jackson,comment_1_7842335,0,o,"TypeReference mapType 
+new TypeReference>(){}; Map result 
+new ObjectMapper().readValue(new File(""input.json""), mapType);.",,,
+6638059=>6638103=>a=>JAVA3,com.fasterxml.jackson,comment_2_7842520,1,o,@fvu This example was the one I was looking for.,,,
+6638059=>6638103=>a=>JAVA3,com.fasterxml.jackson,comment_2_7842520,1,o,It did what I need it to do.,,,
+6638059=>6638103=>a=>JAVA3,com.fasterxml.jackson,comment_2_7842520,1,p,Thanks a lot.,,,
+6638059=>6638103=>a=>JAVA3,com.fasterxml.jackson,comment_2_7842520,1,p,I run this through a for loop with a new string like the one above.,,,
+6638059=>6638103=>a=>JAVA3,com.fasterxml.jackson,comment_2_7842520,0,o,"So I need to escape the "" on the new string as well?",,,
+6638059=>6638103=>a=>JAVA3,com.fasterxml.jackson,comment_3_7842784,1,n,"Never mind I had a stupid moment when I saw this, LOL.",,,stupid
+6638059=>6638103=>a=>JAVA3,com.fasterxml.jackson,comment_3_7842784,1,p,I got everything working thanks a lot guys for all your help.,,,working
+14759743=>14760326=>a=>JAVA1,com.fasterxml.jackson,comment_1_20664416,0,o,is there solution without Jackson ?,,jackson=>com.fasterxml.jackson.core,
+14759743=>14760326=>a=>JAVA1,com.fasterxml.jackson,comment_1_20664416,0,p,"i would like to using only JAXB(native for JBOSS AS 7) for best performance, avoiding others ""jar"".",jboss=>org.jboss,jboss=>org.jboss,best
+14759743=>14760326=>a=>JAVA1,com.fasterxml.jackson,comment_2_20707090,0,n,There are so many things wrong with what you just said.,jboss=>org.jboss,,wrong
+14759743=>14760326=>a=>JAVA1,com.fasterxml.jackson,comment_2_20707090,0,n,"Do a little background googling, signup instead of being anonymous and I'll answer to that.",,,little
+18659835=>20918013=>a=>JAVA9,com.fasterxml.jackson,comment_1_31521225,0,o,Did this answer the question?,,,
+18659835=>20918013=>a=>JAVA9,com.fasterxml.jackson,comment_1_31521225,0,o,If not then what didn't it answer?,,,
+18659835=>20918013=>a=>JAVA9,com.fasterxml.jackson,comment_1_31521225,1,p,If so then could you please accept it?,,,
+11519572=>11527608=>a=>JAVA5,javax.xml,comment_1_15242766,1,o,Thanks did the trick.,,,
+11519572=>11527608=>a=>JAVA5,javax.xml,comment_2_15253713,0,p,"BTW @Blaise Doughan your replies are fantastic but Ive looked at the eclipselink site and cannot find any of this information documented there, is it ?",eclipselink=>eclipselink,eclipselink=>eclipselink,
+11519572=>11527608=>a=>JAVA7,javax.xml,comment_1_15242766,1,o,Thanks did the trick.,,,
+11519572=>11527608=>a=>JAVA7,javax.xml,comment_2_15253713,1,p,"BTW @Blaise Doughan your replies are fantastic but Ive looked at the eclipselink site and cannot find any of this information documented there, is it ?",eclipselink=>eclipselink,eclipselink=>eclipselink,
+11449219=>11450077=>a=>JAVA4,javax.xml,comment_1_15110707,1,p,"Fantastic, got it working as per suggestion.",jaxb=>javax.xml,,"fantastic,working"
+11537931=>11547980=>a=>JAVA8,javax.xml,comment_1_15283750,1,p,Thanks that works.,"eclipselink=>eclipselink,jaxb=>javax.xml",,works
+14569293=>14580767=>a=>JAVA5,javax.xml,comment_1_20374659,1,p,Thanks.,jaxb=>javax.xml,,
+14569293=>14580767=>a=>JAVA5,javax.xml,comment_1_20374659,1,p,"I tried it and the XML consisted of one empty tag only, meaning there's something about the POJO model that JAXB doesn't like.",jaxb=>javax.xml,jaxb=>javax.xml,
+14569293=>14580767=>a=>JAVA5,javax.xml,comment_1_20374659,0,o,(Perhaps it should be Serializable?),,,
+14569293=>14580767=>a=>JAVA5,javax.xml,comment_1_20374659,1,p,That's interesting because it seems to indicate that the only part JAXB plays in this is to lend its annotations and some other interfaces (e.g.,jaxb=>javax.xml,jaxb=>javax.xml,interesting
+14569293=>14580767=>a=>JAVA5,javax.xml,comment_1_20374659,0,o,XmlAdapter) to the JSON (de)serializer and that's where the relationship ends.,,,
+14569293=>14580767=>a=>JAVA5,javax.xml,comment_1_20374659,0,o,"Nevertheless, when I get an opportunity I will do what I can to get JAXB to generate the XML and that may
+reveal something else.",,jaxb=>javax.xml,
+14569293=>14580767=>a=>JAVA5,javax.xml,comment_2_20376367,0,o,@SteveTaylor - I have updated my answer based on your comment.,,,
+57689=>73959=>a=>JAVA1,javax.xml,comment_1_597492,0,o,Absolutely: Jersey is The Thing to use for JSON-based/aware web services.,,jersey=>com.sun.jersey,
+14569293=>14580767=>a=>JAVA7,javax.xml,comment_1_20374659,1,p,Thanks.,jaxb=>javax.xml,,
+14569293=>14580767=>a=>JAVA7,javax.xml,comment_1_20374659,1,p,"I tried it and the XML consisted of one empty tag only, meaning there's something about the POJO model that JAXB doesn't like.",jaxb=>javax.xml,jaxb=>javax.xml,
+14569293=>14580767=>a=>JAVA7,javax.xml,comment_1_20374659,0,o,(Perhaps it should be Serializable?),,,
+14569293=>14580767=>a=>JAVA7,javax.xml,comment_1_20374659,1,p,That's interesting because it seems to indicate that the only part JAXB plays in this is to lend its annotations and some other interfaces (e.g.,jaxb=>javax.xml,jaxb=>javax.xml,interesting
+14569293=>14580767=>a=>JAVA7,javax.xml,comment_1_20374659,0,o,XmlAdapter) to the JSON (de)serializer and that's where the relationship ends.,,,
+14569293=>14580767=>a=>JAVA7,javax.xml,comment_1_20374659,0,o,"Nevertheless, when I get an opportunity I will do what I can to get JAXB to generate the XML and that may
+reveal something else.",,jaxb=>javax.xml,
+14569293=>14580767=>a=>JAVA7,javax.xml,comment_2_20376367,0,o,@SteveTaylor - I have updated my answer based on your comment.,,,
+19158056=>19168878=>a=>JAVA4,javax.xml,comment_1_28372901,0,o,I managed to do it with MOXy.,,,
+19158056=>19168878=>a=>JAVA4,javax.xml,comment_1_28372901,1,p,"Works fine, but I have to do it in this way inside the resource method: JAXBContext context 
+JAXBContextFactory.createContext(new Class[] {ONIXMessage.class}, null); How can I fetch the eclipselink JAXBContext from Jersey?","jersey=>com.sun.jersey,eclipselink=>eclipselink,jaxb=>javax.xml","jersey=>com.sun.jersey,eclipselink=>eclipselink,jaxb=>javax.xml",
+15267385=>15267413=>a=>JAVA3,httpclient,comment_1_21537177,1,p,I have tried implementing you code ANR !!!,,,
+15267385=>15267413=>a=>JAVA3,httpclient,comment_1_21537177,0,o,!.,,,
+15267385=>15267413=>a=>JAVA3,httpclient,comment_2_21537467,0,o,You must implement the Http code in AsyncTask because it is network code.,,,
+15267385=>15267413=>a=>JAVA3,httpclient,comment_2_21537467,0,p,If you have the Log please paste it in your question and also please update your question with the new code.,,,
+16271451=>16271527=>a=>JAVA5,httpclient,comment_1_23307168,1,p,Thanks for this.,,,
+16271451=>16271527=>a=>JAVA5,httpclient,comment_1_23307168,1,o,I'll be able to use this in the future for sure.,,,
