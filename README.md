@@ -18,10 +18,6 @@ The user study technical report is provide in userstudy_technical_report.pdf
 The goal of this study was to analyze the effectiveness of our tool to assist in coding tasks. The objects were the APIs and their
 usage summaries in our tool Uminer, Stack Overflow, Official documentation, and via Search Engines. The subjects were the participants who each completed four coding tasks.
 
-## Raw Data of Responses
-A total of 31 developers (18 professional) participated in the study. Each developer completed four coding tasks. The 31 participants are divided into four groups (G1-G4). Each of three groups (G2, G3, G4) had eight participants. The other group (G1) had eight participant, but one developer could not participate at the end. The responses of each group can be found in the online appendix folder [User Study Responses](https://github.com/anonsubmissions/icse2019/tree/master/User%20Study%20Responses).   
-
-
 ## Four Coding Tasks 
 Each task was required to be completed using a pre-selected API. Thus for the four tasks, each participant needed to use four different APIs: Task1 using Jackson, Task 2 using Gson, Task 3 using Xstream, and Task 4 Spring framework. Jackson and Gson are two of the most popular Java APIs for JSON parsing. Spring is one of the most popular web framework in Java and XStream is well-regarded for its efficient adherence to the JAXB principles, i.e., XML to JSON conversion and vice versa.
 
