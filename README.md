@@ -9,18 +9,8 @@
 
 
 # Empirical Results Reported in RQ4 
-## SnippetAssignedToFimAndClones.pkl
-This python pickle file contains the empirical evidence of code clones we found in our Java+JSON dataset, that we discussed in Section VI. You can open it as follows:
-
-```
-with open('SnippetAssignedToFimAndClones.pkl', 'rb') as f:
-  data = pickle.load(f)
-```
-
-After that, use `data.keys()` to explore the keys inside.
-
 ## OfficialDocumentationUsage.xlsx
-The spreadsheet shows the code examples and API types found in two official documentation most discussed APIs in our dataset. This information is used in Section VI, such as to understand how many of the mined scenarios are actually covered in the official documentation.
+The spreadsheet shows the code examples and API types found in two official documentation most discussed APIs in our dataset. This information is used in RQ4, such as to understand how many of the mined scenarios are actually covered in the official documentation.
 
 ## The User Study
 The user study technical report is provide in userstudy_technical_report.pdf
