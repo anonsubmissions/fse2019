@@ -153,12 +153,12 @@ Our focus was to understand whether and how [TOOL] could
 be adopted into their daily development tasks.
 
  The analytics-based documentation approaches in [TOOL] moti-
-vated the respondents to decide to use Opiner. According to
+vated the respondents to decide to use [TOOL]. According to
 one participant “[TOOL] is a splendid tool to use. It provides
 great features and functionalities to solve different tasks so that
 i will use it”. The unfamiliarity to [TOOL] (because it’s a new
 tool) motivated the other participants to be hesitant about using
-Opiner on a daily basis. According to a participant: “I am a
+our tool on a daily basis. According to a participant: “I am a
 new user of [TOOL]. So, at this moment I am not so sure about
 using it for my daily development tasks.” Four participants
 (i.e., 12.9%) did not want to use [TOOL], because to them
