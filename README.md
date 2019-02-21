@@ -144,7 +144,7 @@ The participants spent less time while using [TOOL], than the other resources fo
 the task TX, participants spent on average 19.4 minutes using [TOOL] was the second best behind (17.3 minuties) only Stack
 Overflow (the lowest completion time). 
 
-### Survey Summary Analysis
+## Survey Summary Analysis
 The survey was conducted in a Google doc form. We invited
 the participants who completed the coding tasks to participate
 in the survey. We asked them the following three questions
@@ -166,3 +166,17 @@ it was redundant or Opiner does not simply have as large
 user base as Stack Overflow has. According to one such
 participant, “I already have everything available from google
 search..."
+
+ The participants considered that [TOOL]
+summaries present the huge volume of data from Stack
+Overflow in a usable format. According to one participant:
+“it provides huge data in a presentable format”. According
+to another participant, the advantage of [TOOL] is that it can
+provide a single platform for the diverse information API
+resources found in Internet: “[TOOL] is useful in the sense
+it is providing information about API’s at a single platform.
+One don’t have to search over the internet and compare by
+themselves. [TOOL] does that task” The combination of big
+data prsentation with a search interface was important for
+another participant: “Helps in finding answers easily and in
+presentable format,more options”
