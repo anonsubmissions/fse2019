@@ -15,7 +15,7 @@ The spreadsheet shows the code examples and API types found in two official docu
 ## The User Study
 The user study actual data are available in the files:
 Solutions to Coding Tasks: G1-JGXS.csv, G2-GXSJ.csv, G3-SJGX.csv, G4-XSJG.csv, 
-Survey: SurveyResponses.xlsx
+Survey: SurveyResponsesAnon.xlsx
 
 The goal of this study was to analyze the effectiveness of our tool to assist in coding tasks. The objects were the APIs and their
 usage summaries in our tool Uminer, Stack Overflow, Official documentation, and via Search Engines. The subjects were the participants who each completed four coding tasks.
@@ -33,21 +33,18 @@ The anonymized Google doc forms are available here:
 For each group, a seven page instruction guide is produced and shared with each participant to ensure they understood the task requirements. Once a participant completed the coding tasks, he was invited to share his/her experience of using our tool and the API resources they used in their coding task in a separate Google doc form. Each participant was asked to share his/her unbiased opinion.
 
 ## Study Design
-We answer the following two questions.
-RQ1. How useful is the [TOOL] to support development tasks?
-RQ2. How useful is the [TOOL] over API official and informal documentation?
 The goal of [TOOL] is to assist developers in finding the right solutions to their coding tasks with relative ease than other resources.
 Therefore, to assess the effectiveness of [TOOL] in real-world coding tasks (RQ1), we conducted a user study involving programmers.
 A total of 31 programmers participated. The purpose of developing [TOOL] is to add benefits over existing API documentation.
-Therefore, to examine the usefulness of [TOOL] over both API formal and informal documents (RQ2), we conducted a survey with the
+Therefore, to examine the usefulness of [TOOL] over both API formal and informal documents, we conducted a survey with the
 31 the participants who completed the coding tasks. We asked them questions with regards to the observed value [TOOL] might have
 added over the API documents in their coding tasks.
 The coding tasks (RQ1) were completed by a total of 31 participants. The survey for RQ2 was answered by 29 out of the 31
-participants who completed coding tasks in RQ1. The surveys were conducted separately. The surveys were conducted after the
+participants who completed coding tasks in RQ1. The survey was conducted separately. The survey were conducted after the
 participants completed their coding tasks. Among the 31 participants, 18 were professional developers. The rest of the participants were
 recruited from four universities.
 
-Our design was a between-subject design [28], with four different groups of participants, each participant
+Our design was a between-subject design, with four different groups of participants, each participant
 completing four tasks in four different settings. Our between-subject design allowed us to avoid repetition by using a different group
 of subjects for each treatment. To avoid potential bias in the coding tasks, we enforced the homogeneity of the groups by ensuring
 that: 1) no group entirely contained participants that were only professional developers or only students, 2) no group entirely contained
@@ -128,7 +125,7 @@ We analyzed each solution to a coding task using three metrics:
 2) Time. How much time was spent to code the solution?
 3) Effort. How much effort was required to code the solution?
 
-## Results
+## Coding Task Summary Results
 
 Participants showed better performance when using [TOOL] only, than when using every available resources
 (which included [TOOL], formal documentation, Stack Overflow, and Search Engines) during the coding tasks. The participants
@@ -146,26 +143,25 @@ The participants spent less time while using [TOOL], than the other resources fo
 the task TX, participants spent on average 19.4 minutes using [TOOL] was the second best behind (17.3 minuties) only Stack
 Overflow (the lowest completion time). 
 
-The participants mostly (more than 90%) agreed that the [TOOL] usage summaries did indeed offer improve-
-ments over formal documentation. The participants appreciated the following improvements in [TOOL] over API official
-documentation: 1) Uptodateness of the scenarios, and 2) Presence of sentiments to validate the effectiveness of usage scenarios.
-The participants suggest to combine the strengths of each summary into their decision making process, “Statistical summary would
-help me to find the users decisions about the API. I would chose conceptual summary and over other summaries rather than formal
-documentation because these provides the usage example with positive and negative reaction.”
+### Survey Summary Analysis
+The survey was conducted in a Google doc form. We invited
+the participants who completed the coding tasks to participate
+in the survey. We asked them the following three questions
+to capture their opinion based on their experience.
+Our focus was to understand whether and how [TOOL] could
+be adopted into their daily development tasks.
 
- One particular reason of moving to [TOOL] from official documentation is that [TOOL] can stay up to date,
-while API official documentation can be often obsolete. For example, one participant still considers API official documentation
-as the starting point to learn an API, but wants to leverage [TOOL] more over time as they want to learn more about the API: “Formal
-documentation will almost always be the starting point for new APIs. But as the APIs start to grow, [TOOL] will serve as the most
-useful tool to find correct solutions to the problems in less time, become familiar with the trends and compare different alternatives.”
-
-
-More than 80% of the participants agreed that [TOOL] summaries offered increases in productivity, confidence,
-and saved time over the informal documentation. According to one developer “there are some sections like conceptual summary
-and code example would be useful for developer on daily basis”.
-
-The participants considered learning an API using [TOOL] could be quicker than while using Stack Overflow,
-because [TOOL] synthesizes the information from Stack Overflow by APIs using both sentiment and source code analyses.
-According to one participant “It is quicker to find solution in [TOOL] since the subject is well covered and useful information is
-collected.” The participants mentioned that [TOOL] offers more features than Stack Overflow to learn an API: “[TOOL] has
-more feature set to help the developers find out the better API for a task. The evaluation and nice presentation of positive and negative sentiments help them decide an API.”
+ The analytics-based documentation approaches in [TOOL] moti-
+vated the respondents to decide to use Opiner. According to
+one participant “[TOOL] is a splendid tool to use. It provides
+great features and functionalities to solve different tasks so that
+i will use it”. The unfamiliarity to [TOOL] (because it’s a new
+tool) motivated the other participants to be hesitant about using
+Opiner on a daily basis. According to a participant: “I am a
+new user of [TOOL]. So, at this moment I am not so sure about
+using it for my daily development tasks.” Four participants
+(i.e., 12.9%) did not want to use [TOOL], because to them
+it was redundant or Opiner does not simply have as large
+user base as Stack Overflow has. According to one such
+participant, “I already have everything available from google
+search..."
