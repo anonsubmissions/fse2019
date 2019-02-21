@@ -162,7 +162,7 @@ Opiner on a daily basis. According to a participant: “I am a
 new user of [TOOL]. So, at this moment I am not so sure about
 using it for my daily development tasks.” Four participants
 (i.e., 12.9%) did not want to use [TOOL], because to them
-it was redundant or Opiner does not simply have as large
+it was redundant or [TOOL] does not simply have as large
 user base as Stack Overflow has. According to one such
 participant, “I already have everything available from google
 search..."
