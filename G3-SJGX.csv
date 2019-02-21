@@ -1,0 +1,529 @@
+Timestamp,Username,Your Profession,Are you actively involved in software development?,Years of experience in software development,Task1(Spring) start time,Your solution,Task1(Spring) End Time,How confident are you with your solution,Did you complete the TLX metrics?,Task2(Jackson) start time,Your solution,Task2(Jackson) End Time,How confident are you with your solution?,Did you complete the TLX metrics,Task3(GSON) start time,Your solution,Task3(GSON) End Time,How confident are you with your solution,Did you complete the TLX metrics?,Task4(XStream) start time,Your solution,Task4(XStream) End Time,How confident are you with your solution,Did you complete the TLX metrics?
+2017/08/19 3:55:54 am GMT-4,REMOVED_FOR_ANONYMIZATION,Software Developer/Engineer,Yes,1 to 2,6:31,https://stackoverflow.com/questions/2591098/how-to-parse-json-in-java,6:57,3,Yes,7:09,"ObjectMapper mapper = new ObjectMapper();
+Person user = mapper.readValue(""{\""name\"": \""John\""}"", Person.class);
+
+System.out.println(user.name); //John
+",7:21,4,Yes,7:24,"https://stackoverflow.com/questions/17049684/convert-from-json-to-multiple-unknown-java-object-types-using-gson/20780903#20780903
+
+Create model class ,
+
+public class MyModel {
+
+    private String errorId;
+
+    public String getErrorId() {
+        return errorId;
+    }
+
+    public void setErrorId(String errorId) {
+        this.errorId = errorId;
+    }
+}
+Create subclass
+
+   public class SubClass extends MyModel {
+        private String subString;
+
+       public String getSubString() {
+            return subString;
+        }
+
+        public void setSubString(String subString) {
+            this.subString = subString;
+        }
+ }
+call parseGson Method
+
+parseGson(subClass);
+gson parse method with object class
+
+   public void parseGson(Object object){
+     object = gson.fromJson(response.toString(), object.getClass());
+     SubClass subclass = (SubClass)object;
+   }
+You can set global variables that cast to myModel
+
+((MyModel)object).setErrorId(response.getString(""errorid""));",7:37,4,Yes,7:40,"https://stackoverflow.com/questions/5113711/convert-xml-to-json-format/5114274#5114274
+
+XML:
+
+<person>
+  <firstname>Joe</firstname>
+  <lastname>Walnes</lastname>
+  <phone>
+    <code>123</code>
+    <number>1234-456</number>
+  </phone>
+  <fax>
+    <code>123</code>
+    <number>9999-999</number>
+  </fax>
+</person>
+POJO (DTO):
+
+public class Person {
+    private String firstname;
+    private String lastname;
+    private PhoneNumber phone;
+    private PhoneNumber fax;
+    // ... constructors and methods
+}
+Convert from XML to POJO:
+
+String xml = ""<person>...</person>"";
+XStream xstream = new XStream();
+Person person = (Person)xstream.fromXML(xml);
+And then from POJO to JSON:
+
+XStream xstream = new XStream(new JettisonMappedXmlDriver());
+String json = xstream.toXML(person);
+Note: although the method reads toXML() XStream will produce JSON, since the Jettison driver is used.",7:52,4,Yes
+2017/08/21 4:22:50 pm GMT-4,REMOVED_FOR_ANONYMIZATION,Student,Yes,3 to 6,14:30,"/* mapper for JSON object */
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Response implements Serializable {
+
+  private String message;
+  private String status;
+  private List<Data> data = new ArrayList<Data>();
+
+}
+
+
+/* data  class */
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class Data implements Serializable {
+
+	//TODO implement all the fields we need 
+}
+
+/* static method in the controller */
+public static Reponse getResponse(){
+
+	ResponseEntity<Reponse> responseEntity = restTemplate.getForEntity(Url, Reponse.class);
+
+    return responseEntity.getBody();
+}
+	",15:14,2,Yes,15:14,"package com.studytrails.json.jackson;
+ 
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Map;
+ 
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.databind.DeserializationFeature;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+ 
+
+/* databinding */
+
+public class DataBinding1 {
+	public static void main(String[] args) throws JsonParseException, JsonMappingException, MalformedURLException, IOException {
+		String url = args[1]; // for example;
+		ObjectMapper mapper = new ObjectMapper();
+		mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
+		CustomObject co = mapper.readValue(new URL(url), CustomObject.class);
+		Dataset[] datasets = CustomObject.getDataset();
+		for (Dataset dataset : datasets) {
+			System.out.println(dataset.getName());
+		}
+	}
+
+ 
+}
+
+
+
+/* CustomObject */ 
+ 
+public class CustomObject {
+ 
+	private String name
+	private Dataset[] dataset;
+ 
+	public void setTitle(String name) {
+		this.name = name;
+	}
+ 
+	public void setDataset(Dataset[] dataset) {
+		this.dataset = dataset;
+	}
+ 
+	public String getName() {
+		return name;
+	}
+ 
+	public Dataset[] getDataset() {
+		return dataset;
+	}
+}
+
+
+/* dataset */
+ 
+ 
+public class Dataset {
+	
+	private Map&ltString , Object&gt otherProperties = new HashMap&ltString , Object&gt();
+  
+	public Object get(String name) {
+		return otherProperties.get(name);
+	}
+ 
+}",15:27,3,Yes,15:28,no solution found. There is no example code provided by Opiner for GSON,15:32,1,Yes,15:33,"public class XstreamTest {
+	
+	/* xml is the string representing the xml document that we want to test to know if it failed */
+	public static String toJson(String xml){
+		XStream xstream = new XStream();
+		CustomClass cc = (CustomClass)xstream.fromXML(xml);
+		XStream xstream = new XStream(new JettisonMappedXmlDriver());
+		String json = xstream.toXML(cc);
+		return json;
+	}
+
+	public static String toXML(String json){
+
+		XStream xstream = new XStream(new JettisonMappedXmlDriver());
+		xstream.alias(""customclass"", CustomClass.class);
+		CustomClass cc = (CustomClass)xstream.fromXML(json);
+	 	XStream xStream = new XStream(new DomDriver());
+	 	return xStream.toXML(cc);
+	}
+
+
+        
+}",16:21,3,Yes
+2017/08/21 8:56:37 pm GMT-4,REMOVED_FOR_ANONYMIZATION,Graduate student,Yes,1 to 2,17:29,"@RestController
+public class Controller {
+
+    @Value(""${url}"")
+    String url;
+
+    @RequestMapping(""/path""
+            method = RequestMethod.GET,
+            produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<Location> locations(@RequestParam",17:45,3,Yes,17:56,"import java.io.File;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
+
+import org.codehaus.jackson.JsonNode;
+import org.codehaus.jackson.JsonParser;
+import org.codehaus.jackson.JsonProcessingException;
+import org.codehaus.jackson.Version;
+import org.codehaus.jackson.map.BeanProperty;
+import org.codehaus.jackson.map.ContextualDeserializer;
+import org.codehaus.jackson.map.DeserializationConfig;
+import org.codehaus.jackson.map.DeserializationContext;
+import org.codehaus.jackson.map.JsonDeserializer;
+import org.codehaus.jackson.map.JsonMappingException;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.map.module.SimpleModule;
+
+public class Foo
+{
+  public static void main(String[] args) throws Exception
+  {
+    EmptyStringAsMapDeserializer<Map<String, ?>> emptyStringAsMapDeserializer = 
+        new EmptyStringAsMapDeserializer<Map<String, ?>>(null, new ObjectMapper());
+
+    SimpleModule module = new SimpleModule(""ThingsDeserializer"", Version.unknownVersion());
+    module.addDeserializer(Map.class, emptyStringAsMapDeserializer);
+
+    ObjectMapper mapper = new ObjectMapper().withModule(module);
+
+    Person person = mapper.readValue(new File(""input.json""), Person.class);
+    System.out.println(mapper.writeValueAsString(person));
+  }
+}
+",18:15,3,Yes,18:27,"public class Main {
+
+/**
+ * @param args
+ * @throws IOException 
+ */
+public static void main(String[] args) throws IOException {
+
+    JsonReader jsonReader = new JsonReader(new FileReader(""jsonFile.json""));
+
+    jsonReader.beginObject();
+
+    while (jsonReader.hasNext()) {
+
+    String name = jsonReader.nextName();
+        if (name.equals(""descriptor"")) {
+             readApp(jsonReader);
+
+        }
+    }
+
+   jsonReader.endObject();
+   jsonReader.close();
+
+}
+
+public static void readApp(JsonReader jsonReader) throws IOException{
+    jsonReader.beginObject();
+     while (jsonReader.hasNext()) {
+         String name = jsonReader.nextName();
+         System.out.println(name);
+         if (name.contains(""app"")){
+             jsonReader.beginObject();
+             while (jsonReader.hasNext()) {
+                 String n = jsonReader.nextName();
+                 if (n.equals(""name"")){
+                     System.out.println(jsonReader.nextString());
+                 }
+                 if (n.equals(""age"")){
+                     System.out.println(jsonReader.nextInt());
+                 }
+                 if (n.equals(""messages"")){
+                     jsonReader.beginArray();
+                     while  (jsonReader.hasNext()) {
+                          System.out.println(jsonReader.nextString());
+                     }
+                     jsonReader.endArray();
+                 }
+             }
+             jsonReader.endObject();
+         }
+
+     }
+     jsonReader.endObject();
+}
+}",18:35,4,Yes,18:51,"public void convert_xml_to_json() {
+
+    // create xstream object for reading xml
+    XStream xstream = new XStream();
+    xstream.setMode(XStream.NO_REFERENCES);
+    Status status = (Status) xstream.fromXML(XML);
+
+    // create a new xstream object w/json provider
+    XStream xstreamForJson = new XStream(new JettisonMappedXmlDriver());
+    xstreamForJson.setMode(XStream.NO_REFERENCES);
+    xstream.alias(""status"", Status.class);
+
+    assertEquals(JSON, xstreamForJson.toXML(status));
+}
+
+public void convert_json_to_xml() {
+
+
+    // create a new xstream object w/json provider
+    XStream xstreamForJson = new XStream(new JettisonMappedXmlDriver());
+    xstreamForJson.setMode(XStream.NO_REFERENCES);
+    xstreamForJson.alias(""status"", Status.class);
+    Status status = (Status) xstreamForJson.fromXML(JSON);
+
+    // create xstream object for reading xml
+    XStream xstream = new XStream();
+    xstream.setMode(XStream.NO_REFERENCES);
+
+    assertEquals(XML, xstream.toXML(status));
+}",18:53,4,Yes
+2017/08/22 12:29:35 pm GMT-4,REMOVED_FOR_ANONYMIZATION,Software Developer/Engineer,Yes,3 to 6,21:30,https://stackoverflow.com/questions/30895286/spring-mvc-how-to-return-simple-string-as-json-in-rest-controller,22:05,3,Yes,22:30,https://stackoverflow.com/questions/12505141/only-using-jsonignore-during-serialization-but-not-deserialization,22:51,4,Yes,16:00,https://stackoverflow.com/questions/20632151/read-json-from-string-in-java/20632386#20632386,16:10,4,Yes,18:15,https://stackoverflow.com/questions/5113711/convert-xml-to-json-format/5114274#5114274,16:26,5,Yes
+2017/08/22 6:30:12 pm GMT-4,REMOVED_FOR_ANONYMIZATION,Researcher,No,3 to 6,9:30,"class PropertyWrapper(){ private Property property; public Property getProperty(){ return property; } public Property setProperty(Property p){ this.property = property; } } public ResponseEntity<Property> updateProperty(@RequestBody PropertyWrapper property, @PathVariable String id) { final ResponseEntity<Property> response = new ResponseEntity<Property>(property.getProperty(), HttpStatus.OK); return response; }",10:45,2,Yes,11:20,"import com.fasterxml.jackson.core.* import com.fasterxml.jackson.databind.* import com.fasterxml.jackson.databind.ser.* import java.io.* public class ContextualJsonIdSerializer extends JsonSerializer<BaseResource> implements ContextualSerializer /*<BaseResource>*/ { private ObjectMapper mapper private boolean useJsonId public ContextualJsonIdSerializer(ObjectMapper mapper) { this(mapper, false) } public ContextualJsonIdSerializer(ObjectMapper mapper, boolean useJsonId) { this.mapper = mapper this.useJsonId = useJsonId } @Override public void serialize(BaseResource br, JsonGenerator jgen, SerializerProvider provider) throws IOException { if (useJsonId) { jgen.writeString(br.getId().toString()) } else { mapper.writeValue(jgen, br) } } @Override public JsonSerializer<BaseResource> createContextual( SerializerProvider config, BeanProperty property) throws JsonMappingException { // First find annotation used for getter or field: System.out.println(""Finding annotations for ""+property) if (null == property) { return new ContextualJsonIdSerializer(mapper, false) } JsonId ann = property.getAnnotation(JsonId.class) if (ann == null) { // but if missing, default one from class ann = property.getContextAnnotation(JsonId.class) } if (ann == null) { //|| ann.length() == 0) { return this //new ContextualJsonIdSerializer(false) } return new ContextualJsonIdSerializer(mapper, true) } }
+",12:05,4,Yes,14:05,"import java.util.Date; import java.util.List; import com.google.gson.Gson; class Employee { private Integer id; private String firstName; private String lastName; private List<String> roles; public Employee(){ } public Employee(Integer id, String firstName, String lastName, Date birthDate){ this.id = id; this.firstName = firstName; this.lastName = lastName; } public Integer getId() { return id; } public void setId(Integer id) { this.id = id; } public String getFirstName() { return firstName; } public void setFirstName(String firstName) { this.firstName = firstName; } public String getLastName() { return lastName; } public void setLastName(String lastName) { this.lastName = lastName; } public List<String> getRoles() { return roles; } public void setRoles(List<String> roles) { this.roles = roles; } @Override public String toString() { return ""Employee [id="" + id + "", firstName="" + firstName + "", "" + ""lastName="" + lastName + "", roles="" + roles + ""]""; } } public class Test { public static void main(String[] args) { // TODO Auto-generated method stub Gson gson = new Gson(); System.out.println( gson.fromJson(""{'id':1,'firstName':'Lokesh','lastName':'Gupta','roles':['ADMIN','MANAGER']}"", Employee.class)); } } ",15:00,2,Yes,15:30,"XML to JSON:
+String xml =
+            ""<root><foo>foo string</foo><bar><x>1</x><y>5</y></bar></root>"";
+        XMLEventReader reader = XMLInputFactory.newInstance()
+            .createXMLEventReader(new StringReader(xml));
+        XMLEventWriter writer = new MappedXMLOutputFactory(new HashMap())
+            .createXMLEventWriter(System.out);
+        writer.add(reader);
+        writer.close();
+        reader.close();
+
+JSON to XML:
+JSONObject json = JSONObject.fromObject(""{\""name\"":\""json\"",\""bool\"":true,\""int\"":1}"");  
+String xml = XMLSerializer.write( json );",16:00,3,Yes
+2017/08/23 7:13:34 am GMT-4,REMOVED_FOR_ANONYMIZATION,Software Developer/Engineer,Yes,< 1,10:30,https://stackoverflow.com/questions/45833715/serialise-polymorphic-json-to-specific-jsonnode,10:33,3,Yes,10:45,https://stackoverflow.com/questions/45830418/jackson-responsebody-custom-serialization-on-spring-controller-per-method,10:50,1,Yes,11:00,https://stackoverflow.com/questions/17049684/convert-from-json-to-multiple-unknown-java-object-types-using-gson/20780903#20780903,11:02,4,Yes,11:06,https://stackoverflow.com/questions/5113711/convert-xml-to-json-format/5114274#5114274,11:10,2,Yes
+2017/08/24 6:34:15 am GMT-4,REMOVED_FOR_ANONYMIZATION,Software Developer/Engineer,Yes,1 to 2,19:00,"@Controller
+public class RequestController {
+
+    @RequestMapping(method = RequestMethod.POST,
+            consumes = MediaType.APPLICATION_JSON_VALUE,
+            produces = MediaType.APPLICATION_JSON_VALUE,
+    value = ""/authentication"")
+    @ResponseBo",19:30,3,No,19:45,"ObjectMapper mapper = new ObjectMapper()
+                .configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+        try {
+            mapper.readValue(""jsonString"", sample.class);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }",20:10,3,No,20:30,"public Model deserialize(JsonElement json, Type type, JsonDeserializationContext jsonDeserializationContext) throws JsonParseException {
+
+        // initialize an instance of your model
+        try {
+            // initialized tClass
+            JsonArray jArray = (JsonArray) json; // get json array
+            JsonObject jsonObject = (JsonObject) jArray.get(0); // get first object
+
+            // do what you want with the first object
+            Class classExtracted = tClass.getClass();
+            Method methods[] = class1.getMethods();
+
+            for (Method method : methods) {
+                if (!method.isAccessible()) {
+                    method.setAccessible(true);
+                }
+                try {
+                    if (method.getName().startsWith(""set"")) {
+                        Type types[] = method.getGenericParameterTypes();
+                        if (types.length != 1) {
+                            throw new IllegalArgumentException();
+                        }
+                        // Will work only for primitive types
+                        String typeName = types[0].getTypeName().trim();
+                        if (typeName.equalsIgnoreCase(""long"")) {
+                            method.invoke(modelClass, jsonObject.get(method.getName().substring(3)).getAsLong());
+                        } else if (typeName.equalsIgnoreCase(""int"")) {
+                            method.invoke(modelClass, jsonObject.get(method.getName().substring(3)).getAsInt());
+                        } else if (typeName.equalsIgnoreCase(""byte"")) {
+                            method.invoke(modelClass, jsonObject.get(method.getName().substring(3)).getAsByte());
+                        } else if (typeName.equalsIgnoreCase(""short"")) {
+                            method.invoke(modelClass, jsonObject.get(method.getName().substring(3)).getAsShort());
+                        } else if (typeName.equalsIgnoreCase(""float"")) {
+                            method.invoke(modelClass, jsonObject.get(method.getName().substring(3)).getAsFloat());
+                        } else if (typeName.equalsIgnoreCase(""double"")) {
+                            method.invoke(modelClass, jsonObject.get(method.getName().substring(3)).getAsDouble());
+                        } else if (typeName.equalsIgnoreCase(""char"")) {
+                            method.invoke(modelClass, jsonObject.get(method.getName().substring(3)).getAsCharacter());
+                        } else if (typeName.equalsIgnoreCase(""string"")) {
+                            method.invoke(modelClass, jsonObject.get(method.getName().substring(3)).getAsString());
+                        }
+                    }
+                } catch (IllegalAccessException | InvocationTargetException e) {
+                    e.printStackTrace();
+                }
+            }
+        } catch (ClassNotFoundException ex) {
+            ex.printStackTrace();
+        }
+        // ignore next json objects
+        return tClass;",21:00,4,No,21:00,"public String convertJSONToXML(String jsonString, Class<T> tClass){
+
+        try {
+
+            XStream xStreamJSON = new XStream(new JsonHierarchicalStreamDriver());
+            xStreamJSON.alias(tClass.getName(), tClass.getClass());
+            tClass = (Class<T>) xStreamJSON.fromXML(jsonString);
+
+            XStream xStreamXML= new XStream();
+            xStreamXML.alias(tClass.getName(), tClass.getClass());
+            return xStreamXML.toXML(tClass);
+
+        } catch (Exception e) {
+            return null;
+        }
+    }",21:30,4,No
+2017/08/25 2:05:46 pm GMT-4,REMOVED_FOR_ANONYMIZATION,Software Developer/Engineer,Yes,10+,11:04,"public class Example {
+
+    public static void main(String... args) throws Exception {
+        ObjectMapper mapper = new ObjectMapper();
+        mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
+        String json = mapper.writeValueAsString(new Test());
+        System.out.println(json);
+    }
+
+    static class user {
+        private String user_name = ""something"";
+        private String password = null;
+
+        public String getUser_name () {
+            return user_name ;
+        }
+
+        public void setSser_name (String u) {
+            this.user_name  = u;
+        }
+
+        public String getPassword() {
+            return password;
+        }
+
+        public void setPassword(String p) {
+            this.password = p;
+        }
+    }
+}",17:00,3,Yes,14:00,"public class AgentResponse<T> {
+
+    private T result;
+
+    @JsonCreator
+    public AgentResponse(@JsonProperty(""result"") T result) {
+        this.result = result;
+    }
+    public T getResult() {
+        return result;
+    }
+}",20:00,2,Yes,17:00,"import com.google.gson.Gson
+
+public class Q19478087 {
+  public class Test {
+    public int id
+    public Object blob
+
+    @Override
+    public String toString() {
+      return ""Test [id="" + id + "", blob="" + blob + ""]""
+    }
+  }
+
+  public static void main(String[] str) {
+    String json1 = ""{\""id\"": 1, \""blob\"": \""example text\""}""
+    String json2 = ""{\""id\"": 2, \""blob\"": {\""to\"": 1234, \""from\"": 4321, \""name\"": \""My_Name\""}}""
+    Gson g = new Gson()
+    Test test1 = g.fromJson(json1, Test.class)
+    System.out.println(""Test 1: "" + test1)
+    Test test2 = g.fromJson(json2, Test.class)
+    System.out.println(""Test 2: "" + test2)
+  }
+}",19:00,1,Yes,20:00,"import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
+
+public class WriteTest {
+
+	public static void main(String[] args) {
+
+        Product product = new Product(""Banana"", ""123"", 23.00);
+        XStream xstream = new XStream(new JettisonMappedXmlDriver());
+        xstream.setMode(XStream.NO_REFERENCES);
+        xstream.alias(""product"", Product.class);
+
+        System.out.println(xstream.toXML(product));		
+		
+	}
+
+}
+
+
+
+
+
+
+
+import com.thoughtworks.xstream.XStream;
+import com.thoughtworks.xstream.io.json.JettisonMappedXmlDriver;
+
+public class ReadTest {
+
+	public static void main(String[] args) {
+		String json = ""{\""product\"":{\""name\"":\""Banana\"",\""id\"":123""
+		    + "",\""price\"":23.0}}"";
+		    
+		XStream xstream = new XStream(new JettisonMappedXmlDriver());
+		xstream.alias(""product"", Product.class);
+		Product product = (Product)xstream.fromXML(json);
+		System.out.println(product.getName());
+	}
+
+}
+
+
+
+
+",22:00,3,Yes
