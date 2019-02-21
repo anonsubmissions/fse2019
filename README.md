@@ -13,7 +13,9 @@
 The spreadsheet shows the code examples and API types found in two official documentation most discussed APIs in our dataset. This information is used in RQ4, such as to understand how many of the mined scenarios are actually covered in the official documentation.
 
 ## The User Study
-The user study technical report is provide in userstudy_technical_report.pdf
+The user study actual data are available in the files:
+Solutions to Coding Tasks: G1-JGXS.csv, G2-GXSJ.csv, G3-SJGX.csv, G4-XSJG.csv, 
+Survey: SurveyResponses.xlsx
 
 The goal of this study was to analyze the effectiveness of our tool to assist in coding tasks. The objects were the APIs and their
 usage summaries in our tool Uminer, Stack Overflow, Official documentation, and via Search Engines. The subjects were the participants who each completed four coding tasks.
